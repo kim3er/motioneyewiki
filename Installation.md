@@ -51,6 +51,6 @@ Use `admin` with empty password when prompted for credentials. For further detai
 
 Upgrading should be as easy as running the following command (as root):
 
-    `pip install --upgrade motioneye`
+    pip install --upgrade motioneye
 
 If you have manually downloaded and installed motionEye, the `pip` command above won't work and you'll need to repeat the manual installation procedure, preserving the configuration directory.
