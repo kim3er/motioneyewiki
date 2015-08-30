@@ -1,8 +1,8 @@
 **note**: These instructions apply to Debian and Debian-based distributions. For [[Ubuntu|Install-On-Ubuntu]] and [[Raspbian|Install-On-Raspbian]] however, you should check out their specific instructions.
 
-1. You'll need to add the following repo to your apt sources (required for `ffmpeg`):
+1. You'll need to add the following repo to your apt sources, replacing [name] with `wheezy` (Debian 7) or `jessie` (Debian 8). This is required for `ffmpeg`:
 
-        echo "deb http://www.deb-multimedia.org stable main non-free" >> /etc/apt/sources.list
+        echo "deb http://www.deb-multimedia.org [name] main non-free" >> /etc/apt/sources.list
         apt-get update
 
 2. Install `motion`, `ffmpeg` and `v4l-utils`:
