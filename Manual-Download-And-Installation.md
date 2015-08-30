@@ -6,7 +6,7 @@ Although not recommended, manually installing motionEye can give you more contro
 
 3. Download `motioneye` from [PyPI](https://pypi.python.org/pypi/motioneye#downloads) or directly from [releases](https://github.com/ccrisan/motioneye/releases) on github.
 
-4. Install `motioneye`, which will automatically pull Python dependencies (`tornado`, `jinja2`, `pillow` and `pycurl`).
+4. Install `motioneye`, which will automatically pull Python dependencies (`tornado`, `jinja2`, `pillow` and `pycurl`):
 
     * using `pip`:
 
