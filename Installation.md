@@ -22,7 +22,7 @@ There are three major versions of motion:
 
 * Mr-Dave's version can be checked out [here](https://github.com/Mr-Dave/motion). This is probably the most up-to-date, featureful and stable version, itself being forked from [sackmotion repository](https://github.com/sackmotion/motion).
 
-Read the [[Compiling Motion|Compiling-Motion]] page if you want to manually compile any of these versions.
+Read the [[Compiling Motion|Compiling-Motion]] page if you want to manually compile any of these versions or to download some prebuilt binaries.
 
 ### Install Instructions ###
 
