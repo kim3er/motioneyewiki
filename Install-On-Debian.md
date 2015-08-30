@@ -1,3 +1,5 @@
+**note**: These instructions apply to Debian and Debian-based distributions. For [[Ubuntu|Install-On-Ubuntu]] and [[Raspbian|Install-On-Raspbian]] however, you should check out their specific instructions.
+
 1. You'll need to add the following repo to your apt sources (required for `ffmpeg`):
 
         echo "deb http://www.deb-multimedia.org stable main non-free" >> /etc/apt/sources.list
@@ -33,13 +35,3 @@
             cp /usr/local/share/motioneye/extra/motioneye.systemd-unit /etc/systemd/system
             systemctl enable motioneye
             systemctl start motioneye
-
-#### Raspbian ####
-
-#### Fedora ####
-
-#### Arch Linux ####
-
-#### Other Distributions ####
-
-#### Manual Download ####
