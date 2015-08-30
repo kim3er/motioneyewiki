@@ -26,7 +26,50 @@ Read the [[Compiling Motion|Compiling-Motion]] page if you want to manually comp
 
 ### Install Instructions ###
 
-#### Debian/Ubuntu ####
+motionEye releases are uploaded to [PyPI](https://pypi.python.org/pypi/motioneye/), so you can use the `pip` command to install it as well as (some of) its dependencies. Following are detailed instructions for some common distributions.
+
+**note 1**: The given commands normally need to be run as root; type them in a root shell or use `sudo` before each command.
+**note 2**: If you are configuring a motionEye system that will only act as a hub for other motionEye-based cameras (i.e. no locally connected cameras and no IP cameras), you can skip installing `motion`, `ffmpeg` and `v4l-utils`.
+
+#### Debian ####
+
+You'll need to add the following repo to your apt sources (required for `ffmpeg`):
+
+    echo "deb http://www.deb-multimedia.org stable main non-free" >> /etc/apt/sources.list
+    apt-get update
+
+Install `motion`, `ffmpeg` and `v4l-utils`:
+
+    apt-get install motion ffmpeg v4l-utils
+
+Install the dependencies from the repositories:
+
+    apt-get install python-dev libcurl4-openssl-dev
+
+Install `motioneye`, which will automatically pull Python dependencies (`tornado`, `jinja2`, `pillow` and `pycurl`):
+
+    pip install motioneye
+
+Prepare the configuration directory:
+
+    mkdir -p /etc/motioneye
+    cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.conf
+
+Add an init script, configure to run at startup and start the `motionEye` server:
+
+*Debian 7, sysvinit-based*:
+
+    cp /usr/local/share/motioneye/extra/motioneye.init-debian /etc/init.d/motioneye
+    update-rc.d -f motioneye defaults
+    /etc/init.d/motioneye start
+ 
+*Debian 8, systemd-based*: 
+
+    cp /usr/local/share/motioneye/extra/motioneye.systemd-unit /etc/systemd/system
+    systemctl enable motioneye
+    systemctl start motioneye
+
+#### Raspbian ####
 
 #### Fedora ####
 
