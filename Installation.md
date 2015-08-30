@@ -53,4 +53,8 @@ Upgrading should be as easy as running the following command (as root):
 
     pip install --upgrade motioneye
 
+To upgrade to a specific version (say 0.27.1), use:
+
+    pip install --upgrade motioneye==0.27.1
+
 If you have manually downloaded and installed motionEye, the `pip` command above won't work and you'll need to repeat the manual installation procedure, preserving the configuration directory.
