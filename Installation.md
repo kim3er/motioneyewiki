@@ -38,3 +38,11 @@ motionEye releases are uploaded to [PyPI](https://pypi.python.org/pypi/motioneye
 * [[Install On Arch|Install-On-Arch]]
 * [[Install On Other Distributions|Install-On-Other-Distributions]]
 * [[Manual Download And Installation|Manual-Download-And-Installation]]
+
+### Accessing The Frontend ###
+
+After having successfully followed the installation instructions, the motionEye server should be running on your system and listening on port 8765. Fire up your favorite web browser and visit the following URL (replacing `[your_ip]` with... well, your system's IP address):
+
+    http://[your_ip]:8765/
+
+Use `admin` with empty password when prompted for credentials. For further details on how to configure motionEye, see [[Configuration|Configuration]].
