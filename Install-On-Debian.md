@@ -31,6 +31,7 @@
     * Debian 7, sysvinit-based:
 
             cp /usr/local/share/motioneye/extra/motioneye.init-debian /etc/init.d/motioneye
+            chmod +x /etc/init.d/motioneye
             update-rc.d -f motioneye defaults
             /etc/init.d/motioneye start
  
