@@ -4,6 +4,8 @@
 
         echo "deb http://www.deb-multimedia.org [name] main non-free" >> /etc/apt/sources.list
         apt-get update
+        apt-get install deb-multimedia-keyring
+        apt-get update     # yes, again
 
 2. Install `motion`, `ffmpeg` and `v4l-utils`:
 
