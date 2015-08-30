@@ -15,6 +15,8 @@
 
         apt-get install python-pip python-dev libssl-dev libcurl4-openssl-dev
 
+    **note**: Python 2.7 is required. If your system still runs Python 2.6 or older, please upgrade.
+
 4. Install `motioneye`, which will automatically pull Python dependencies (`tornado`, `jinja2`, `pillow` and `pycurl`):
 
         pip install motioneye
