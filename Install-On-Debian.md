@@ -9,6 +9,8 @@
 
         apt-get install motion ffmpeg v4l-utils
 
+    **note**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]] instead of installing it using `apt-get`.
+
 3. Install the dependencies from the repositories:
 
         apt-get install python-dev libcurl4-openssl-dev
