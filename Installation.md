@@ -46,3 +46,11 @@ After having successfully followed the installation instructions, the motionEye 
     http://[your_ip]:8765/
 
 Use `admin` with empty password when prompted for credentials. For further details on how to configure motionEye, see [[Configuration|Configuration]].
+
+### Upgrading ###
+
+Upgrading should be as easy as running the following command (as root):
+
+    `pip install --upgrade motioneye`
+
+If you have manually downloaded and installed motionEye, the `pip` command above won't work and you'll need to repeat the manual installation procedure, preserving the configuration directory.
