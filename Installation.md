@@ -29,6 +29,7 @@ Read the [[Compiling Motion|Compiling-Motion]] page if you want to manually comp
 motionEye releases are uploaded to [PyPI](https://pypi.python.org/pypi/motioneye/), so you can use the `pip` command to install it as well as (some of) its dependencies. Following are detailed instructions for some common distributions.
 
 **note 1**: The given commands normally need to be run as root; type them in a root shell or use `sudo` before each command.
+
 **note 2**: If you are configuring a motionEye system that will only act as a hub for other motionEye-based cameras (i.e. no locally connected cameras and no IP cameras), you can skip installing `motion`, `ffmpeg` and `v4l-utils`.
 
 * [[Install On Debian|Install-On-Debian]]
