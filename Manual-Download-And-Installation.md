@@ -18,12 +18,18 @@ Although not recommended, manually installing motionEye can give you more contro
             cd motioneye-x.y
             python setup.py install --prefix=/usr
 
-5. Prepare the configuration directory (you can choose to use whatever configuration directory  you want):
+5. Prepare the configuration directory (you can choose to use whatever configuration directory you want):
 
-        mkdir -p /path/to/motioneye/conf
-        cp /usr/share/motioneye/extra/motioneye.conf.sample /path/to/motioneye/conf/motioneye.conf
+        mkdir -p /path/to/motioneye
+        cp /usr/share/motioneye/extra/motioneye.conf.sample /path/to/motioneye/motioneye.conf
 
-6. Run the `motionEye` server:
+6. You will probably want to edit the configuration file and change various paths:
+
+        nano /path/to/motioneye/motioneye.conf
+
+    **note**: if you leave the paths in `motioneye.conf` unchanged, the `/path/to/motioneye/` folder will be used for *conf*, *run*, *log* and *media* paths.
+
+7. Run the `motionEye` server:
 
         meyectl startserver -c /path/to/motioneye/conf/motioneye.conf
 
