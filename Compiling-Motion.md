@@ -18,7 +18,7 @@ The following instructions should normally work with any variant of motion you m
 
     aptitude install build-essential libjpeg-dev libavformat-dev libavcodec-dev libswscale-dev ffmpeg subversion git
 
-    **note**: Plain Debian systems require the *deb-multimedia* repo for `ffmpeg`. See [Install On Debian](https://github.com/ccrisan/motioneye/wiki/Install-On-Debian), the first step, for more details.
+**note**: Plain Debian systems require the *deb-multimedia* repo for `ffmpeg`. See [Install On Debian](https://github.com/ccrisan/motioneye/wiki/Install-On-Debian), the first step, for more details.
 
 **On Arch**, one would run (as root):
 
@@ -26,7 +26,7 @@ The following instructions should normally work with any variant of motion you m
 
 **On Fedora**, make sure to add the *rpmfusion* repo to your system (see [Install On Fedora](https://github.com/ccrisan/motioneye/wiki/Install-On-Fedora), the first step, for details). Then run following command (as root):
 
-    dnf install automake jibjpeg ffmpeg
+    dnf install automake libjpeg ffmpeg
 
 ### Getting The Source ###
 
@@ -37,4 +37,25 @@ If you decide to go with a SVN-based version, use the following command to check
 For git-based forks, use the following command (Mr Dave's fork is used as example):
 
     git clone https://github.com/Mr-Dave/motion.git motion-mrdave
+
+### Configure Your Build ###
+
+There are some features (mostly related to databases) that are not used with motionEye; we disable support for those components when running the *configure* script:
+
+    cd [your-motion-dir]
+    ./configure --prefix=/usr --without-pgsql --without-sdl --without-sqlite3 --without-mysql
+
+**note**: Replace `[your-motion-dir]` with the directory where you have downloaded the source code (e.g. `motion-svn` or `motion-mrdave`).
+
+### Compile Motion
+
+Just run `make` in the motion directory (add `-j N` to start a parallel make):
+
+    `make`
+
+### Installing Motion
+
+Luckily motion is a simple binary that can be copied wherever you find appropriate on your filesystem. The recommended place is `/usr/local/bin` where it will supersede any version of motion installed from official repos:
+
+    cp motion /usr/local/bin/motion
 
