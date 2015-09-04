@@ -16,7 +16,7 @@ The following instructions should normally work with any variant of motion you m
 
 **On a Debian-based distro**, the following command installs all the requirements (as root):
 
-    aptitude install build-essential libjpeg-dev libavformat-dev libavcodec-dev libswscale-dev ffmpeg subversion git
+    apt-get install build-essential libjpeg-dev libavformat-dev libavcodec-dev libswscale-dev ffmpeg subversion git
 
 **note**: Plain Debian systems require the *deb-multimedia* repo for `ffmpeg`. See [Install On Debian](https://github.com/ccrisan/motioneye/wiki/Install-On-Debian), the first step, for more details.
 
