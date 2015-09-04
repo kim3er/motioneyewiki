@@ -51,7 +51,7 @@ There are some features (mostly related to databases) that are not used with mot
 
 Just run `make` in the motion directory (add `-j N` to start a parallel make):
 
-    `make`
+    make
 
 ### Installing Motion
 
