@@ -2,14 +2,14 @@
 
 1. Install `motion`, `ffmpeg`:
 
-        apt-get install motion ffmpeg v4l-utils
+        apt-get install motion ffmpeg
 
     **note 1**: `v4l-utils` appears to be preinstalled on Raspbian systems.
     **note 2**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]] instead of installing it using `apt-get`.
 
 2. Install the dependencies from the repositories:
 
-        apt-get install python-pip python-dev libssl-dev libcurl4-openssl-dev
+        apt-get install python-pip python-dev libssl-dev libcurl4-openssl-dev libjpeg-dev
 
 3. Install `motioneye`, which will automatically pull Python dependencies (`tornado`, `jinja2`, `pillow` and `pycurl`):
 
