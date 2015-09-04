@@ -2,7 +2,7 @@
 
 1. Unless you configure your machine for a remote cameras-only hub, make sure you have `motion`, `ffmpeg` and `v4l-utils` installed on your system. This step depends on the distro you're using.
 
-2. Make sure you have Installed a [`python 2.7`](https://www.python.org/) interpreter, [`pip`](https://pip.pypa.io/en/stable/installing.html) and [`libcurl`](http://curl.haxx.se/libcurl/).
+2. Make sure you have Installed a [`python 2.7`](https://www.python.org/) interpreter, [`pip`](https://pip.pypa.io/en/stable/installing.html), [`libcurl`](http://curl.haxx.se/libcurl/) and [`libjpeg`](http://libjpeg.sourceforge.net/).
 
 3. Install `motioneye`, which will automatically pull Python dependencies (`tornado`, `jinja2`, `pillow` and `pycurl`):
 
