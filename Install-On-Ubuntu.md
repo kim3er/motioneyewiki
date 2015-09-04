@@ -24,6 +24,10 @@
         mkdir -p /etc/motioneye
         cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.conf
 
+6. Prepare the media directory:
+
+        mkdir -p /var/lib/motioneye
+
 6. Add an init script, configure it to run at startup and start the `motionEye` server:
 
     * Ubuntu 14.10 or earlier, upstart-based:
