@@ -27,11 +27,11 @@ Although not recommended, manually installing motionEye can give you more contro
 
         nano /path/to/motioneye/motioneye.conf
 
-    **note**: if you leave the paths in `motioneye.conf` unchanged, the `/path/to/motioneye/` folder will be used for *conf*, *run*, *log* and *media* paths.
+    **note**: if you comment out all the paths in `motioneye.conf`, the `/path/to/motioneye/` folder will be used for *conf*, *run*, *log* and *media* paths.
 
 7. Run the `motionEye` server:
 
-        meyectl startserver -c /path/to/motioneye/conf/motioneye.conf
+        meyectl startserver -c /path/to/motioneye/motioneye.conf
 
     (hit Ctrl+C to terminate)
 
