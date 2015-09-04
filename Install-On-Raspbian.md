@@ -20,7 +20,11 @@
         mkdir -p /etc/motioneye
         cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.conf
 
-5. Add an init script, configure it to run at startup and start the `motionEye` server:
+5. Prepare the media directory:
+
+        mkdir -p /var/lib/motioneye
+
+6. Add an init script, configure it to run at startup and start the `motionEye` server:
 
         cp /usr/local/share/motioneye/extra/motioneye.init-debian /etc/init.d/motioneye
         chmod +x /etc/init.d/motioneye
