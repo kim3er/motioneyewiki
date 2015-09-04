@@ -15,7 +15,11 @@
 
     **note**: The sample file path may differ. If the one above is wrong, you may try `/usr/local/share/motioneye/extra/motioneye.conf.sample`.
 
-5. Add an init script, configure it to run at startup and start the `motionEye` server:
+5. Prepare the media directory:
+
+        mkdir -p /var/lib/motioneye
+
+6. Add an init script, configure it to run at startup and start the `motionEye` server:
 
     * sysvinit-based:
 
