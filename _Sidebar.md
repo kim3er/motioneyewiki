@@ -10,5 +10,6 @@
     * [[Install On Other Distros|Install-On-Other-Distributions]]
     * [[Manual Installation|Manual-Download-And-Installation]]
 * [[Configuration|Configuration]]
+* [[Changelog|Changelog]]
 * [[FAQ|FAQ]]
 * [[Reporting An Issue|Reporting-An-Issue]]
