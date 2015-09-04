@@ -53,7 +53,7 @@ Just run `make` in the motion directory (add `-j N` to start a parallel make):
 
     make
 
-### Installing Motion
+### Install Motion
 
 Luckily motion is a simple binary that can be copied wherever you find appropriate on your filesystem. The recommended place is `/usr/local/bin` where it will supersede any version of motion installed from official repos:
 
