@@ -50,14 +50,14 @@
 
        **note** that will update all the other required dependecies
 
-    *Ubuntu 14.10 or earlier:
+    * Ubuntu 14.10 or earlier:
             
             service motioneye restart
 
-    *Ubuntu 15.04 or later:
+    * Ubuntu 15.04 or later:
 
             systemctl restart motioneye
 
-******Please note that all the commands assume that you are root, so prior issuing any of them you would need to issue:
+**Please note that all the commands assume that you are root, so prior issuing any of them you would need to issue:
 
             sudo su -
