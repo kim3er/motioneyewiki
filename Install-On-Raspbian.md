@@ -31,3 +31,14 @@
         update-rc.d -f motioneye defaults
         /etc/init.d/motioneye start
  
+7. To upgrade to the newest version of motioneye, after it has been released, just issue:
+
+            pip install motioneye --upgrade
+
+       **note** that will update all the other required dependecies
+
+            service motioneye restart
+
+**Please note that all the commands assume that you are root, so prior issuing any of them you would need to issue:
+
+            sudo su -
