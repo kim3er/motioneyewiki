@@ -43,3 +43,21 @@
             systemctl daemon-reload
             systemctl enable motioneye
             systemctl start motioneye
+
+7. To upgrade to the newest version of motioneye, after it has been released, just issue:
+
+            pip install motioneye --upgrade
+
+       **note** that will update all the other required dependecies
+
+    *Ubuntu 14.10 or earlier:
+            
+            service motioneye restart
+
+    *Ubuntu 15.04 or later:
+
+            systemctl restart motioneye
+
+******Please note that all the commands assume that you are root, so prior issuing any of them you would need to issue:
+
+            sudo su -
