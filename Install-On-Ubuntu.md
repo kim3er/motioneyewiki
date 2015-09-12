@@ -1,4 +1,7 @@
-**note**: These instructions apply to Ubuntu distributions. They may work for other Ubuntu derivatives (such as *Linux Mint*) but they haven't been tested.
+### Before Proceeding
+* Read the general [[Installation|Installation]] page first.
+* These instructions apply to Ubuntu distributions. They may work for other Ubuntu derivatives (such as *Linux Mint*) but they haven't been tested.
+* All commands require *root*; use `sudo` before each command or become root using `sudo -i`.
 
 1. **Skip this step for Ubuntu 15.04 or newer**. For older Ubuntu versions, you'll need to add a PPA to your apt sources, in order to install `ffmpeg`:
 
@@ -57,7 +60,3 @@
     * Ubuntu 15.04 or later:
 
             systemctl restart motioneye
-
-**Please note that all the commands assume that you are root, so prior issuing any of them you would need to issue:
-
-            sudo su -
