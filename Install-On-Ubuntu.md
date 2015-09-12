@@ -3,6 +3,7 @@
 * These instructions apply to Ubuntu distributions. They may work for other Ubuntu derivatives (such as *Linux Mint*) but they haven't been tested.
 * All commands require *root*; use `sudo` before each command or become root using `sudo -i`.
 
+### Instructions
 1. **Skip this step for Ubuntu 15.04 or newer**. For older Ubuntu versions, you'll need to add a PPA to your apt sources, in order to install `ffmpeg`:
 
         add-apt-repository -y ppa:kirillshkrogalev/ffmpeg-next
