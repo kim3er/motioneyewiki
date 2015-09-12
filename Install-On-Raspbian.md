@@ -3,6 +3,8 @@
 * These instructions apply only to Raspbian, the official Raspberry PI distro.
 * All commands require *root*; use `sudo` before each command or become root using `sudo -i`.
 
+### Instructions
+
 1. Install `motion`, `ffmpeg`:
 
         apt-get install motion ffmpeg
