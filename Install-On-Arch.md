@@ -1,4 +1,10 @@
-**note**: These instructions apply to Arch Linux. They may work for other Arch-based distributions but the procedure hasn't been tested.
+### Before Proceeding
+
+* Read the general [[Installation|Installation]] page first.
+* These instructions apply to Arch Linux. They may work for other Arch-based distributions but the procedure hasn't been tested.
+* All commands require *root*; use `sudo` before each command or become root using `sudo -i`.
+
+### Instructions
 
 1. Install `motion`, `ffmpeg` and `v4l-utils`:
 
@@ -37,5 +43,3 @@
        **note** that will update all the other required dependecies
 
             systemctl restart motioneye
-
-**Please note that all the commands assume that you are root.
