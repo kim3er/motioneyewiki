@@ -1,4 +1,9 @@
-**note**: These instructions apply to relatively recent Fedora distributions. Depending on the release, you'll need to replace `dnf` with the older `yum` command.
+### Before Proceeding
+* Read the general [[Installation|Installation]] page first.
+* These instructions apply to relatively recent Fedora distributions. Depending on the release, you'll need to replace `dnf` with the older `yum` command.
+* All commands require *root*; use `sudo` before each command or become root using `sudo -i`.
+
+### Instructions
 
 1. Make sure you have [rpmfusion](http://rpmfusion.org/) added to your system (required for both `ffmpeg` and `motion`):
 
