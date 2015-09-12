@@ -1,4 +1,9 @@
-Although not recommended, manually installing motionEye can give you more control over the directory where motionEye is installed and the way the server is started.
+### Before Proceeding
+* Read the general [[Installation|Installation]] page first.
+* Although not recommended, manually installing motionEye can give you more control over the directory where motionEye is installed and the way the server is started.
+* All commands require *root*; use `sudo` before each command or become root using `sudo -i` or `su`.
+
+### Instructions
 
 1. Unless you configure your machine for a remote cameras-only hub, make sure you have `motion`, `ffmpeg` and `v4l-utils` installed on your system. This step depends on the distro you're using.
 
