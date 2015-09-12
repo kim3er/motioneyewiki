@@ -1,10 +1,14 @@
-**note**: These instructions apply only to Raspbian, the official Raspberry PI distro.
+### Before Proceeding
+* Read the general [[Installation|Installation]] page first.
+* These instructions apply only to Raspbian, the official Raspberry PI distro.
+* All commands require *root*; use `sudo` before each command or become root using `sudo -i`.
 
 1. Install `motion`, `ffmpeg`:
 
         apt-get install motion ffmpeg
 
     **note 1**: `v4l-utils` appears to be preinstalled on Raspbian systems.
+
     **note 2**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]] instead of installing it using `apt-get`.
 
 2. Install the dependencies from the repositories:
@@ -31,14 +35,3 @@
         update-rc.d -f motioneye defaults
         /etc/init.d/motioneye start
  
-7. To upgrade to the newest version of motioneye, after it has been released, just issue:
-
-            pip install motioneye --upgrade
-
-       **note** that will update all the other required dependecies
-
-            service motioneye restart
-
-**Please note that all the commands assume that you are root, so prior issuing any of them you would need to issue:
-
-            sudo su -
