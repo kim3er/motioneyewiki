@@ -3,7 +3,7 @@
 * These instructions apply to Debian and Debian-based distributions. For [[Ubuntu|Install-On-Ubuntu]] and [[Raspbian|Install-On-Raspbian]] however, you should check out their specific instructions.
 * All commands require *root*; use `sudo` before each command or become root using `su`.
 
-### Install Instructions
+### Instructions
 1. You'll need to add the following repo to your apt sources, replacing [name] with `wheezy` (Debian 7) or `jessie` (Debian 8). This is required for `ffmpeg`:
 
         echo "deb http://www.deb-multimedia.org [name] main non-free" >> /etc/apt/sources.list
