@@ -32,6 +32,8 @@ motionEye releases are uploaded to [PyPI](https://pypi.python.org/pypi/motioneye
 
 **note 2**: If you are configuring a motionEye system that will only act as a hub for other motionEye-based cameras (i.e. no locally connected cameras and no IP cameras), you can skip installing `motion`, `ffmpeg` and `v4l-utils`.
 
+Choose one of the following specific install instructions. When you're done, you may want to come back here and read on to find out how to access the frontend or how to update your motionEye.
+
 * [[Install On Debian|Install-On-Debian]]
 * [[Install On Ubuntu|Install-On-Ubuntu]]
 * [[Install On Raspbian|Install-On-Raspbian]]
