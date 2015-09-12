@@ -1,4 +1,10 @@
-**note**: If your distribution is based on one of the "officially supported" distros listed in the [[Installation|Installation#install-instructions]] article, you should probably follow those instructions instead.
+### Before Proceeding
+
+* Read the general [[Installation|Installation]] page first.
+* If your distribution is based on one of the "officially supported" distros listed in the [[Installation|Installation#install-instructions]] article, you should probably follow those instructions instead.
+* All commands require *root*; use `sudo` before each command or become root using `sudo -i` or `su`.
+
+### Instructions
 
 1. Unless you configure your machine for a remote cameras-only hub, make sure you have `motion`, `ffmpeg` and `v4l-utils` installed on your system. This step depends on the distro you're using.
 
