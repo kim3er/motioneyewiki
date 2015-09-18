@@ -12,7 +12,9 @@
 
     **note 1**: `v4l-utils` appears to be preinstalled on Raspbian systems.
 
-    **note 2**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]] instead of installing it using `apt-get`. Also make sure to configure the build using `--with-ffmpeg=/usr/lib/arm-linux-gnueabihf --with-ffmpeg-headers=/usr`.
+    **note 2**: A prebuilt version of Mr Dave's motion for Raspbian can be downloaded from [[here|motion-binaries/motion-mrdave-raspbian]].
+
+    **note 3**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]] instead of installing it using `apt-get`. Also make sure to configure the build using `--with-ffmpeg=/usr/lib/arm-linux-gnueabihf --with-ffmpeg-headers=/usr`.
 
 2. Install the dependencies from the repositories:
 
