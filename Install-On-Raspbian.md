@@ -14,6 +14,13 @@
 
     **note 2**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]] instead of installing it using `apt-get`.
 
+    **note 3**: When ./configure from Mr. Dave's fork cannot find the files for ffmpeg, linking them might be neccesary: 
+
+        ln -s /usr/lib/arm-linux-gnueabihf/libavcodec.a /usr/lib/libavcodec.a
+        ln -s /usr/lib/arm-linux-gnueabihf/libavcodec.so /usr/lib/libavcodec.so
+        ln -s /usr/lib/arm-linux-gnueabihf/libavformat.a /usr/lib/libavformat.a
+        ln -s /usr/lib/arm-linux-gnueabihf/libavformat.so /usr/lib/libavformat.so
+
 2. Install the dependencies from the repositories:
 
         apt-get install python-pip python-dev libssl-dev libcurl4-openssl-dev libjpeg-dev
