@@ -14,7 +14,7 @@ Based on what users think are the most important features that motionEye should 
 
 ### An API for easy custom integrations
 
-#### Manually controlled video recording and picture snapshots
+### Manually controlled video recording and picture snapshots
 
 ### Configurable layout for camera frames
 
