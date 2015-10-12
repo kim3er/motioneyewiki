@@ -9,6 +9,7 @@
     * [[Install On Arch|Install-On-Arch]]
     * [[Install On Other Distros|Install-On-Other-Distributions]]
     * [[Manual Installation|Manual-Download-And-Installation]]
+    * [[Compiling Motion|Compiling-Motion]]
 * [[Configuration|Configuration]]
     * [[Running Behind Nginx|Running-Behind-Nginx]]
 * [[Changelog|Changelog]]
