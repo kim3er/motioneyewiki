@@ -10,6 +10,7 @@
     * [[Install On Other Distros|Install-On-Other-Distributions]]
     * [[Manual Installation|Manual-Download-And-Installation]]
 * [[Configuration|Configuration]]
+    * [[Running Behind Nginx|Running-Behind-Nginx]]
 * [[Changelog|Changelog]]
 * [[FAQ|FAQ]]
 * [[Reporting An Issue|Reporting-An-Issue]]
