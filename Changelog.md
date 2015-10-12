@@ -1,3 +1,9 @@
+##### 0.28.1:
+* light switch detection threshold slider has been moved to *Motion Detection* section, where it belongs
+* the settings panel is no longer automatically opened after login
+* fixed a bug where motion detection events were not relayed correctly to the UI (the frame wouldn't turn to red)
+* added `motion_control_localhost` and `motion_control_port` settings to configure the motion HTTP control interface
+
 #### 0.28:
 * added continuous movie recording mode
 * the destination address is now used as "from" when sending email notifications
