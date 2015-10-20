@@ -1,3 +1,9 @@
+##### 0.28.2:
+ * the working schedule mechanism won't be enabled unless at least one day is enabled
+ * fixed memory leaks with working schedule enabled
+ * fixed email notifications not being sent
+ * added new settings: `motion_control_localhost`, `motion_control_port`, `list_media_timeout` and `timelapse_timeout` (previously hardcoded)
+
 ##### 0.28.1:
 * light switch detection threshold slider has been moved to *Motion Detection* section, where it belongs
 * the settings panel is no longer automatically opened after login
