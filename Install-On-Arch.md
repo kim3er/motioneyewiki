@@ -14,7 +14,7 @@
 
 2. Install the dependencies from the repositories:
 
-        pacman -S python2-pip base-devel
+        pacman -S python2-pip base-devel mime-types
 
 3. Install `motioneye`, which will automatically pull Python dependencies (`tornado`, `jinja2`, `pillow` and `pycurl`):
 
