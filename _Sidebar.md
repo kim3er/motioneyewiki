@@ -12,6 +12,7 @@
     * [[Compiling Motion|Compiling-Motion]]
 * [[Configuration|Configuration]]
     * [[Running Behind Nginx|Running-Behind-Nginx]]
+    * [[Running As Non-root|Running-As-Non-root]]
 * [[Changelog|Changelog]]
 * [[FAQ|FAQ]]
 * [[Reporting An Issue|Reporting-An-Issue]]
