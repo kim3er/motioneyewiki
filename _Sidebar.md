@@ -12,7 +12,7 @@
     * [[Compiling Motion|Compiling-Motion]]
 * [[Configuration|Configuration]]
     * [[Running Behind Nginx|Running-Behind-Nginx]]
-    * [[Running As Unprivileged User|Running-As-Unprivileged-User]]
+    * [[Running As Normal User|Running-As-Unprivileged-User]]
 * [[Changelog|Changelog]]
 * [[FAQ|FAQ]]
 * [[Reporting An Issue|Reporting-An-Issue]]
