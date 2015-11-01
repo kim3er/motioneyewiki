@@ -14,10 +14,10 @@ All files used and created by motionEye must live in `/home/youruser/motioneye`.
 
 Edit the `/home/youruser/motioneye/motioneye.conf` file by adjusting the following settings as indicated:
 
-    * `conf_path /home/youruser/motioneye`
-    * `run_path /home/youruser/motioneye`
-    * `log_path /home/youruser/motioneye`
-    * `media_path /home/youruser/motioneye`
+ * `conf_path /home/youruser/motioneye`
+ * `run_path /home/youruser/motioneye`
+ * `log_path /home/youruser/motioneye`
+ * `media_path /home/youruser/motioneye`
 
 Of course you can use separate subdirectories for some or all of the above; just make sure to create them first.
 
