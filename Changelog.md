@@ -1,3 +1,9 @@
+##### 0.28.3:
+ * lightswitch detection is now disabled by default
+ * minimum motion frames option is now set to 10 frames by default
+ * fixed no preview bug when using digest authentication for the video streaming
+ * fixed various bugs related to dealing with ungrouped media files (those created directly in the root directory of the camera)
+
 ##### 0.28.2:
  * the working schedule mechanism won't be enabled unless at least one day is enabled
  * fixed memory leaks with working schedule enabled
