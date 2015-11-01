@@ -25,11 +25,16 @@ Of course you can use separate subdirectories for some or all of the above; just
 
 The motionEye server must be instructed to use the new configuration file and to start as another user. Here's how you can do that, depending on the way the server is started:
 
-### On sysvinit-based Systems
+##### On sysvinit-based Systems
 
-### On systemd-based Systems
+Edit the init script `/etc/init.d/motioneye` by adjusting the `USER` and `OPTIONS` variables:
 
-Just edit the systemd unit file `/etc/systemd/system/motioneye.service` by adding a `User` directive to the `[Service]` section and changing the path to the configuration file:
+    USER="youruser"
+    OPTIONS="startserver -c /home/youruser/motioneye/motioneye.conf -l -b"
+
+##### On systemd-based Systems
+
+Edit the systemd unit file `/etc/systemd/system/motioneye.service` by adding a `User` directive to the `[Service]` section and changing the path to the configuration file:
 
     ...
     [Service]
@@ -42,7 +47,7 @@ Don't forget to reload the units and restart the service in order for the change
     systemctl daemon-reload
     systemctl restart motioneye
 
-### Manually Started motionEye Server
+##### Manually Started motionEye Server
 
 Assuming `sudo` is available on your system, the command should look something like this:
 
