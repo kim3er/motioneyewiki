@@ -27,8 +27,9 @@ The motionEye server must be instructed to use the new configuration file and to
 
 ##### On sysvinit-based Systems
 
-Edit the init script `/etc/init.d/motioneye` by adjusting the `USER` and `OPTIONS` variables:
+Edit the init script `/etc/init.d/motioneye` by adjusting the `PIDFILE`, `USER` and `OPTIONS` variables:
 
+    PIDFILE="/home/youruser/motioneye/$NAME.pid"
     USER="youruser"
     OPTIONS="startserver -c /home/youruser/motioneye/motioneye.conf -l -b"
 
