@@ -43,6 +43,7 @@ For git-based forks, use the following command (Mr Dave's fork is used as exampl
 There are some features (mostly related to databases) that are not used with motionEye; we disable support for those components when running the *configure* script:
 
     cd [your-motion-dir]
+    autoreconf  # only required if the `configure` script is missing
     ./configure --prefix=/usr --without-pgsql --without-sdl --without-sqlite3 --without-mysql
 
 **note 1**: Replace `[your-motion-dir]` with the directory where you have downloaded the source code (e.g. `motion-svn` or `motion-mrdave`).
