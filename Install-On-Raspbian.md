@@ -6,7 +6,14 @@
 
 ### Instructions
 
-1. Install `motion`, `ffmpeg`:
+1. You'll need to add the following repo to your apt sources. This is required for `ffmpeg`:
+
+        echo "deb http://www.deb-multimedia.org jessie main non-free" >> /etc/apt/sources.list
+        apt-get update
+        apt-get install deb-multimedia-keyring
+        apt-get update     # yes, again
+
+2. Install `motion`, `ffmpeg`:
 
         apt-get install motion ffmpeg
 
@@ -16,24 +23,24 @@
 
     **note 3**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]] instead of installing it using `apt-get`. Also make sure to configure the build using `--with-ffmpeg=/usr/lib/arm-linux-gnueabihf --with-ffmpeg-headers=/usr`.
 
-2. Install the dependencies from the repositories:
+3. Install the dependencies from the repositories:
 
         apt-get install python-pip python-dev libssl-dev libcurl4-openssl-dev libjpeg-dev
 
-3. Install `motioneye`, which will automatically pull Python dependencies (`tornado`, `jinja2`, `pillow` and `pycurl`):
+4. Install `motioneye`, which will automatically pull Python dependencies (`tornado`, `jinja2`, `pillow` and `pycurl`):
 
         pip install motioneye
 
-4. Prepare the configuration directory:
+5. Prepare the configuration directory:
 
         mkdir -p /etc/motioneye
         cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.conf
 
-5. Prepare the media directory:
+6. Prepare the media directory:
 
         mkdir -p /var/lib/motioneye
 
-6. Add an init script, configure it to run at startup and start the `motionEye` server:
+7. Add an init script, configure it to run at startup and start the `motionEye` server:
 
         cp /usr/local/share/motioneye/extra/motioneye.init-debian /etc/init.d/motioneye
         chmod +x /etc/init.d/motioneye
