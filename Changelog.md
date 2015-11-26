@@ -1,3 +1,10 @@
+##### 0.29:
+ * fixed media browser layout on Firefox 42+
+ * fixed webhook POST
+ * fixed boolean extra motion options
+ * added support for transmitting data as form or json when calling a webhook
+ * added support for media file uploading to Google Drive and Dropbox
+
 ##### 0.28.3:
  * lightswitch detection is now disabled by default
  * minimum motion frames option is now set to 10 frames by default
