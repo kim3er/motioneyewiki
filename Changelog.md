@@ -3,6 +3,7 @@
  * fixed webhook POST
  * fixed boolean extra motion options
  * added support for transmitting data as form or json when calling a webhook
+ * added support for calling webhooks and running commands with each media file creation
  * added support for media file uploading to Google Drive and Dropbox
 
 ##### 0.28.3:
