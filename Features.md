@@ -4,3 +4,4 @@
 * **motion detection** with email notifications and working schedule
 * **JPEG** files for still images, **AVI** files for videos
 * **timelapse** movies
+* uploading media files to **Google Drive** and **Dropbox**
