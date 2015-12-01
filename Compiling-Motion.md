@@ -9,7 +9,7 @@ The following instructions should normally work with any variant of motion you m
 
 ### Requirements ###
 
-* a Linux machine with [`gcc`](https://gcc.gnu.org/) and [`automake`](http://www.gnu.org/software/automake/)
+* a Linux machine with [`gcc`](https://gcc.gnu.org/), [`automake`](http://www.gnu.org/software/automake/) and [`autoconf`](http://www.gnu.org/software/autoconf/)
 * [`libjpeg`](http://libjpeg.sourceforge.net/)
 * a relatively recent version of [`ffmpeg`](https://www.ffmpeg.org/)
 * [`subversion`](https://subversion.apache.org/) and/or [`git`](https://git-scm.com/)
@@ -26,7 +26,7 @@ The following instructions should normally work with any variant of motion you m
 
 **On Fedora**, make sure to add the *rpmfusion* repo to your system (see [Install On Fedora](https://github.com/ccrisan/motioneye/wiki/Install-On-Fedora), the first step, for details). Then run following command (as root):
 
-    dnf install automake libjpeg ffmpeg
+    dnf install automake autoconf libjpeg ffmpeg
 
 ### Getting The Source ###
 
