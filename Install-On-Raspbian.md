@@ -1,3 +1,5 @@
+## There seems to be a problem with the ffmpeg offered by www.deb-multimedia.org and the latest version of Raspbian Jessie that makes it (as well as motion and, in turn, motionEye) crash with *Illegal Instruction*. I'm currently investigating the issue and trying to come up with a solution.
+
 ### Before Proceeding
 * Read the general [[Installation|Installation]] page first.
 * These instructions apply only to Raspbian, the official Raspberry PI distro.
