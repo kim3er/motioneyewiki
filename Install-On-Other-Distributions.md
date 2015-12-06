@@ -50,3 +50,7 @@
         Just make sure to run the following command:
 
             meyectl startserver -b -c /etc/motioneye/motioneye.conf
+
+8. To upgrade to the newest version of motionEye, just issue:
+
+        pip install motioneye --upgrade
