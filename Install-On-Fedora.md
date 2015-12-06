@@ -40,3 +40,8 @@
             systemctl daemon-reload
             systemctl enable motioneye
             systemctl start motioneye
+
+8. To upgrade to the newest version of motionEye, just issue:
+
+        pip install motioneye --upgrade
+        systemctl restart motioneye
