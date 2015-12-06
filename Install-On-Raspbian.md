@@ -1,6 +1,6 @@
 ### Before Proceeding
 * Read the general [[Installation|Installation]] page first.
-* These instructions apply only to Raspbian, the official Raspberry PI distro.
+* These instructions apply only to an up-to-date Raspbian, the official Raspberry PI distro.
 * All commands require *root*; use `sudo` before each command or become root using `sudo -i`.
 * If you want to use the CSI camera module for the Raspberry PI, you need to add `bcm2835-v4l2` to `/etc/modules` and reboot.
 
@@ -45,8 +45,12 @@
 
 7. Add an init script, configure it to run at startup and start the `motionEye` server:
 
-        cp /usr/local/share/motioneye/extra/motioneye.init-debian /etc/init.d/motioneye
-        chmod +x /etc/init.d/motioneye
-        update-rc.d -f motioneye defaults
-        /etc/init.d/motioneye start
- 
+        cp /usr/local/share/motioneye/extra/motioneye.systemd-unit-local /etc/systemd/system/motioneye.service
+        systemctl daemon-reload
+        systemctl enable motioneye
+        systemctl start motioneye
+
+8. To upgrade to the newest version of motionEye, just issue:
+
+        pip install motioneye --upgrade
+        systemctl restart motioneye
