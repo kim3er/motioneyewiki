@@ -1,5 +1,3 @@
-## There seems to be a problem with the ffmpeg offered by www.deb-multimedia.org and the latest version of Raspbian Jessie that makes it (as well as motion and, in turn, motionEye) crash with *Illegal Instruction*. I'm currently investigating the issue and trying to come up with a solution.
-
 ### Before Proceeding
 * Read the general [[Installation|Installation]] page first.
 * These instructions apply only to Raspbian, the official Raspberry PI distro.
@@ -8,20 +6,18 @@
 
 ### Instructions
 
-1. You'll need to add the following repo to your apt sources. This is required for `ffmpeg`:
+1. As you probably know, `ffmpeg` is missing from the official Debian repos. Moreover, the variant offered  by *deb-multimedia.org* no longer works with Raspbian after recent updates. You can either compile it yourself (not recommended) or download this [prebuilt package](precompiled/ffmpeg_2.8.3.git325b593-1_armhf.deb) and install it:
 
-        echo "deb http://www.deb-multimedia.org jessie main non-free" >> /etc/apt/sources.list
-        apt-get update
-        apt-get install deb-multimedia-keyring
-        apt-get update     # yes, again
+        wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_2.8.3.git325b593-1_armhf.deb
+        dpkg -i ffmpeg_2.8.3.git325b593-1_armhf.deb
 
-2. Install `motion`, `ffmpeg`:
+2. Install `motion`:
 
         apt-get install motion ffmpeg
 
     **note 1**: `v4l-utils` appears to be preinstalled on Raspbian systems.
 
-    **note 2**: A prebuilt version of Mr Dave's motion for Raspbian can be downloaded from [[here|motion-binaries/motion-mrdave-raspbian]].
+    **note 2**: A prebuilt version of Mr Dave's motion for Raspbian can be downloaded from [[here|precompiled/motion-mrdave-raspbian]].
 
     **note 3**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]] instead of installing it using `apt-get`. Also make sure to configure the build using `--with-ffmpeg=/usr/lib/arm-linux-gnueabihf --with-ffmpeg-headers=/usr`.
 
