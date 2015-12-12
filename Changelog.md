@@ -1,4 +1,8 @@
-##### 0.29:
+##### 0.29.1:
+ * fixed camera live preview when enabling streaming authentication
+ * motion log level follows now motionEye's log level setting as close as possible
+
+#### 0.29:
  * fixed media browser layout on Firefox 42+
  * fixed webhook POST
  * fixed boolean extra motion options
