@@ -1,4 +1,4 @@
-## What's motionEye?
+## What is motionEye?
 
 **motionEye** is a web frontend for the [motion daemon](http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome), written in Python.
 
