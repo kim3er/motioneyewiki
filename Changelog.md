@@ -1,3 +1,11 @@
+#### 0.30:
+ * camera frames layout has been completely redesigned
+ * current streaming/capture frame rate is now shown in each camera frame
+ * added support for [[action buttons|Action Buttons]]
+ * added frame rate dimmer control
+ * added resolution dimmer control
+ * added `meyectl shell` command (for debugging purposes)
+
 ##### 0.29.1:
  * fixed camera live preview when enabling streaming authentication
  * motion log level follows now motionEye's log level setting as close as possible
