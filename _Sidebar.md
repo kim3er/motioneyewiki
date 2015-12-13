@@ -13,6 +13,7 @@
 * [[Configuration|Configuration]]
     * [[Running Behind Nginx|Running-Behind-Nginx]]
     * [[Running As Normal User|Running-As-Normal-User]]
+    * [[Action Buttons|Action-Buttons]]
 * [[Changelog|Changelog]]
 * [[FAQ|FAQ]]
 * [[Reporting An Issue|Reporting-An-Issue]]
