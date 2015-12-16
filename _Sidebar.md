@@ -11,6 +11,7 @@
     * [[Manual Installation|Manual-Download-And-Installation]]
     * [[Compiling Motion|Compiling-Motion]]
 * [[Configuration|Configuration]]
+    * [[Configuration File|Configuration-File]]
     * [[Running Behind Nginx|Running-Behind-Nginx]]
     * [[Running As Normal User|Running-As-Normal-User]]
     * [[Action Buttons|Action-Buttons]]
