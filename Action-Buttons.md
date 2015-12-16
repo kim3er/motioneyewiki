@@ -17,7 +17,7 @@ While the available actions are limited to the above set, the commands executed 
 
 ### Enabling Actions
 
-motionEye will look inside its configuration folder for executable files named `[action]_[cameraid]`, where `action` is one of the available actions (listed above) and `cameraid` is the id of the camera on top of which the action button will be displayed.
+motionEye will look inside its [[configuration folder|Configuration-File#conf_path]] for executable files named `[action]_[cameraid]`, where `action` is one of the available actions (listed above) and `cameraid` is the id of the camera on top of which the action button will be displayed.
 
 For example, on a setup using the default configuration, the presence of the *executable* file `/etc/motioneye/unlock_1` tells motionEye to show an *unlock* button on top of camera number one. The file will be executed upon pressing the button. Buttons will have distinctive icons that correspond to the name of the action.
 
