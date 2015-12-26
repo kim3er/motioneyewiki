@@ -5,6 +5,8 @@
  * added frame rate dimmer control
  * added resolution dimmer control
  * added `meyectl shell` command (for debugging purposes)
+ * fixed mixed up cameras when sending email notifications
+ * semicolons are now accepted in SMTP account passwords
 
 ##### 0.29.1:
  * fixed camera live preview when enabling streaming authentication
