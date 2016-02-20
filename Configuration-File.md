@@ -100,6 +100,10 @@ Configures the timeout in seconds to use when talking to the SMTP server. Defaul
 
 Configures the timeout in seconds to wait for media files list. Defaults to `120`.
 
+##### `list_media_timeout_email`
+
+Configures the timeout in seconds to wait for media files list, when sending emails. Defaults to `10`.
+
 ##### `zip_timeout`
 
 Configures the timeout in seconds to wait for zip file creation. Defaults to `300`.
