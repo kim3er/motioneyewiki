@@ -1,3 +1,11 @@
+#### 0.31:
+ * hidden folders are ignored when listing media files
+ * media file listing performance improvements
+ * added support for more network share security methods
+ * added support for open wifi networks
+ * SMTP passwords can now contain percent characters
+ * the From field can now be customized when configuring email notifications
+
 #### 0.30:
  * camera frames layout has been completely redesigned
  * current streaming/capture frame rate is now shown in each camera frame
