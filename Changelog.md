@@ -1,3 +1,7 @@
+##### 0.31.1:
+ * the root media folder is no longer removed when removing a media files group
+ * right click on a picture frame allows now saving the picture locally (thanks to @nmrugg)
+
 #### 0.31:
  * hidden folders are ignored when listing media files
  * media file listing performance improvements
