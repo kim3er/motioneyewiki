@@ -1,3 +1,7 @@
+##### 0.31.2:
+ * fixed a bug where File Storage section would show up in settings menu for Simple MJPEG Cameras
+ * hidden files and dirs are now properly ignored when listing media files
+
 ##### 0.31.1:
  * the root media folder is no longer removed when removing a media files group
  * right click on a picture frame allows now saving the picture locally (thanks to @nmrugg)
