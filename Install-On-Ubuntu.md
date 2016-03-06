@@ -17,7 +17,7 @@
 
 3. Install the dependencies from the repositories:
 
-        apt-get install python-pip python-dev libssl-dev libcurl4-openssl-dev libjpeg-dev
+        apt-get install python-pip python-dev curl libssl-dev libcurl4-openssl-dev libjpeg-dev
 
 4. Install `motioneye`, which will automatically pull Python dependencies (`tornado`, `jinja2`, `pillow` and `pycurl`):
 
