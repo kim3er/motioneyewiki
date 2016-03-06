@@ -19,7 +19,7 @@
 
 3. Install the dependencies from the repositories:
 
-        apt-get install python-pip python-dev libssl-dev libcurl4-openssl-dev libjpeg-dev
+        apt-get install python-pip python-dev curl libssl-dev libcurl4-openssl-dev libjpeg-dev
 
     **note**: Python 2.7 is required. If your system still runs Python 2.6 or older, please upgrade.
 
