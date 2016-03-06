@@ -5,7 +5,7 @@
 * tornado 3.1+
 * jinja2
 * PIL or pillow
-* libcurl & pycurl
+* curl, libcurl & pycurl
 * motion (optional)
 * ffmpeg (optional)
 * v4l-utils (optional)
