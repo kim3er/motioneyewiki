@@ -1,3 +1,6 @@
+##### 0.31.3:
+ * event passing between motion and motionEye is now faster thanks to a `relayevent.sh` shell script replacing old python-based method
+
 ##### 0.31.2:
  * fixed a bug where File Storage section would show up in settings menu for Simple MJPEG Cameras
  * hidden files and dirs are now properly ignored when listing media files
