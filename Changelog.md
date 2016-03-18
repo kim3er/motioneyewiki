@@ -1,3 +1,7 @@
+##### 0.31.4:
+ * fixed a bug with numeric passwords used for remote motionEye cameras
+ * when removing a single movie file from the media browser, the associated .thumb file is removed as well
+
 ##### 0.31.3:
  * event passing between motion and motionEye is now faster thanks to a `relayevent.sh` shell script replacing old python-based method
 
