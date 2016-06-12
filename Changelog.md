@@ -1,3 +1,10 @@
+#### 0.32:
+ * added support for [[monitoring commands|Monitoring Commands]]
+ * HTTP 403 status is now used to signal any authentication problem
+
+##### 0.31.5:
+ * fixed a bug where the `relayevent.sh` script would compute a wrong signature when using special characters in admin password
+
 ##### 0.31.4:
  * fixed a bug with numeric passwords used for remote motionEye cameras
  * when removing a single movie file from the media browser, the associated .thumb file is removed as well
