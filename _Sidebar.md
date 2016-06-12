@@ -15,5 +15,6 @@
     * [[Running Behind Nginx|Running-Behind-Nginx]]
     * [[Running As Normal User|Running-As-Normal-User]]
     * [[Action Buttons|Action-Buttons]]
+    * [[Monitoring Commands|Monitoring-Commands]]
 * [[Changelog|Changelog]]
 * [[Roadmap|Roadmap]]
