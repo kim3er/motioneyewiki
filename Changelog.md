@@ -1,3 +1,14 @@
+##### 0.32.1:
+ * more than 10 cameras can now be added to a motionEye server
+ * fixed a bug where media files cleanup wouldn't work when having multiple cameras
+ * RTSP network cameras: added support for basic authentication
+ * Dropbox API v2 is now used (v1 has been deprecated)
+ * Google Drive: added support for relative path (subfolders for media files)
+ * Google Drive: media files are no longer uploaded to folders that have been moved to trash
+ * added a test button for email notifications
+ * added a test button for network shares
+ * HEAD method is now supported by all URIs
+
 #### 0.32:
  * added support for [[monitoring commands|Monitoring Commands]]
  * HTTP 403 status is now used to signal any authentication problem
