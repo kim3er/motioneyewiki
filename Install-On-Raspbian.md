@@ -20,7 +20,7 @@
 
         apt-get install motion
 
-    **note 1**: `v4l-utils` appears to be preinstalled on Raspbian systems.
+    **note 1**: `v4l-utils` appears to be preinstalled on Raspbian systems; if it's not, please install it
 
     **note 2**: A prebuilt version of Mr Dave's motion for Raspbian can be downloaded from [[here|precompiled/motion-mrdave-raspbian]]:
 
