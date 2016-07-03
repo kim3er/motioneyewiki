@@ -6,10 +6,10 @@
 
 ### Instructions
 
-1. As you probably know, `ffmpeg` is missing from the official Debian repos. Moreover, the variant offered  by *deb-multimedia.org* no longer works with Raspbian after recent updates. You can either compile it yourself (not recommended) or download this [prebuilt package](precompiled/ffmpeg_2.8.3.git325b593-1_armhf.deb) and install it:
+1. As you probably know, `ffmpeg` is missing from the official Debian repos. Moreover, the variant offered  by *deb-multimedia.org* no longer works with Raspbian after recent updates. You can either compile it yourself (not recommended) or download this [prebuilt package](precompiled/ffmpeg_3.1.1-1_armhf.deb) and install it:
 
-        wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_2.8.3.git325b593-1_armhf.deb
-        dpkg -i ffmpeg_2.8.3.git325b593-1_armhf.deb
+        wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_3.1.1-1_armhf.deb
+        dpkg -i ffmpeg_3.1.1-1_armhf.deb
 
     **note**: If you have previously added the *deb-multimedia* repo to your system and installed their version of ffmpeg, you'll need to remove the repo from your apt sources and run the following commands to reinstall the official version of some *libav* libraries:
 
@@ -18,20 +18,18 @@
 
 2. Install `motion`:
 
-        apt-get install motion
-
-    **note 1**: `v4l-utils` appears to be preinstalled on Raspbian systems; if it's not, please install it
-
-    **note 2**: A prebuilt version of Mr Dave's motion for Raspbian can be downloaded from [[here|precompiled/motion-mrdave-raspbian]]:
-
         wget https://github.com/ccrisan/motioneye/wiki/precompiled/motion-mrdave-raspbian -O /usr/local/bin/motion
         chmod +x /usr/local/bin/motion
 
-    **note 3**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]] instead of installing it using `apt-get`. Also make sure to configure the build using `--with-ffmpeg=/usr/lib/arm-linux-gnueabihf --with-ffmpeg-headers=/usr`.
+    **note 1**: The motion version provided by the official repos is too old and not recommended.
+
+    **note 2**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]].
 
 3. Install the dependencies from the repositories:
 
         apt-get install python-pip python-dev curl libssl-dev libcurl4-openssl-dev libjpeg-dev
+
+    **note**: `v4l-utils` appears to be preinstalled on Raspbian systems; if it isn't, please install it
 
 4. Install `motioneye`, which will automatically pull Python dependencies (`tornado`, `jinja2`, `pillow` and `pycurl`):
 
