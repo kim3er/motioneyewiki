@@ -11,10 +11,9 @@
         wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_3.1.1-1_armhf.deb
         dpkg -i ffmpeg_3.1.1-1_armhf.deb
 
-    **note**: If you have previously added the *deb-multimedia* repo to your system and installed their version of ffmpeg, you'll need to remove the repo from your apt sources and run the following commands to reinstall the official version of some *libav* libraries:
+    **note**: If you have previously added the *deb-multimedia* repo to your system and installed their version of ffmpeg, you'll need to remove the repo from your apt sources and run the following commands to remove related libraries:
 
         apt-get remove libavcodec-extra-56 libavformat56 libavresample2 libavutil54
-        apt-get install libavutil54 libavformat56 libswscale3
 
 2. Install `motion`:
 
