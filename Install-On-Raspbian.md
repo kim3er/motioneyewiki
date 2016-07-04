@@ -15,7 +15,13 @@
 
         apt-get remove libavcodec-extra-56 libavformat56 libavresample2 libavutil54
 
-2. Install `motion`:
+2. Install the dependencies from the repositories:
+
+        apt-get install python-pip python-dev curl libssl-dev libcurl4-openssl-dev libjpeg-dev libx264-142
+
+    **note**: `v4l-utils` appears to be preinstalled on Raspbian systems; if it isn't, please install it
+
+3. Install `motion`:
 
         wget https://github.com/ccrisan/motioneye/wiki/precompiled/motion-mrdave-raspbian -O /usr/local/bin/motion
         chmod +x /usr/local/bin/motion
@@ -23,12 +29,6 @@
     **note 1**: The motion version provided by the official repos is too old and not recommended.
 
     **note 2**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]].
-
-3. Install the dependencies from the repositories:
-
-        apt-get install python-pip python-dev curl libssl-dev libcurl4-openssl-dev libjpeg-dev
-
-    **note**: `v4l-utils` appears to be preinstalled on Raspbian systems; if it isn't, please install it
 
 4. Install `motioneye`, which will automatically pull Python dependencies (`tornado`, `jinja2`, `pillow` and `pycurl`):
 
