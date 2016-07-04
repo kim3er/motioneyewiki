@@ -1,3 +1,6 @@
+##### 0.32.2:
+ * fixed upload services no longer working problem
+
 ##### 0.32.1:
  * more than 10 cameras can now be added to a motionEye server
  * fixed a bug where media files cleanup wouldn't work when having multiple cameras
