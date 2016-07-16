@@ -48,9 +48,7 @@ There are some features (mostly related to databases) that are not used with mot
 
 **note 1**: Replace `[your-motion-dir]` with the directory where you have downloaded the source code (e.g. `motion-svn` or `motion-mrdave`).
 
-**note 2**: Your system may have ffmpeg libs and headers installed in non-standard locations. You will need to specify them when running the configure script with `--with-ffmpeg=` and `--with-ffmpeg-headers=`. For **Raspbian** your configure command should be:
-
-    ./configure --prefix=/usr --with-ffmpeg=/usr/lib/arm-linux-gnueabihf  --with-ffmpeg-headers=/usr --without-pgsql --without-sdl --without-sqlite3 --without-mysql
+**note 2**: Your system may have ffmpeg libs and headers installed in non-standard locations. You will need to specify them when running the configure script with `--with-ffmpeg=` (and `--with-ffmpeg-headers=`, for older versions).
 
 ### Compile Motion
 
