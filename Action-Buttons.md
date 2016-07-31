@@ -12,6 +12,12 @@ The following actions are defined:
 * `light_off`
 * `alarm_on`
 * `alarm_off`
+* `top`
+* `right`
+* `down`
+* `left`
+* `zoom_in`
+* `zoom_out`
 
 While the available actions are limited to the above set, the commands executed can be practically anything and have to be defined by the user.
 
