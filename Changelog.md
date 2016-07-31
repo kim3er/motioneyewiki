@@ -1,3 +1,9 @@
+#### 0.33:
+ * added support for choosing movie formats/codecs (h264/mp4 is available with newer motion versions)
+ * RTSP: prefer TCP over UDP
+ * added action buttons for pan/tilt/zoom (only the buttons, not the underlying functionality!)
+ * notifications emails now contain the `Date` header, for better compatibility
+
 ##### 0.32.2:
  * fixed upload services no longer working problem
 
