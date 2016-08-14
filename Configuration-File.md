@@ -115,3 +115,7 @@ Configures the timeout in seconds to wait for timelapse file creation. Defaults 
 ##### `add_remove_cameras`
 
 Set this to `false` to disable adding and removing of cameras from the UI. Defaults to `true`.
+
+##### `validate_certs`
+
+Controls whether HTTPS/SSL certificates are validated by various clients used by motionEye, or not. Defaults to `true`.
