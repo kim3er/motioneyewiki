@@ -1,3 +1,9 @@
+##### 0.33.1:
+ * the movie quality setting should now be closer to what the user expects, as percentage
+ * the media root directory of each camera is now created automatically upon hitting *apply*
+ * the default root directory of each camera contains now the (initial) name of the camera
+ * added the [[validate_certs|Configuration-File#validate_certs]] setting to allow talking to sites with self-signed certificates
+
 #### 0.33:
  * added support for choosing movie formats/codecs (h264/mp4 is available with newer motion versions)
  * RTSP: prefer TCP over UDP
