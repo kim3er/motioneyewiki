@@ -18,6 +18,7 @@ The following actions are defined:
 * `left`
 * `zoom_in`
 * `zoom_out`
+* `preset1` to `preset9`
 
 While the available actions are limited to the above set, the commands executed can be practically anything and have to be defined by the user.
 
