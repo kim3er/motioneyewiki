@@ -1,3 +1,9 @@
+##### 0.33.2:
+ * RTSP network cameras with Digest Authentication can now be added (although no credentials verification will be done)
+ * fixed various bugs when changing upload services settings or provider
+ * the previous/next arrows in the media browser are no longer reversed
+ * added support for numerical action buttons (1 to 9), that could be used for PTZ presets
+
 ##### 0.33.1:
  * the movie quality setting should now be closer to what the user expects, as percentage
  * the media root directory of each camera is now created automatically upon hitting *apply*
