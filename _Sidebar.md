@@ -8,7 +8,7 @@
     * [[Install On Fedora|Install-On-Fedora]]
     * [[Install On Arch|Install-On-Arch]]
     * [[Install On Other Distros|Install-On-Other-Distributions]]
-    * [[Install On Docker|Install-in-Docker]]
+    * [[Install In Docker|Install-in-Docker]]
     * [[Manual Installation|Manual-Download-And-Installation]]
     * [[Compiling Motion|Compiling-Motion]]
 * [[Configuration|Configuration]]
