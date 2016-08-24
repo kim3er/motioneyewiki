@@ -11,7 +11,7 @@ motionEye comes with a `Dockerfile` and a sample `docker-compose.yml`, both in t
 
 4. Either start a container using `docker run` or use the provided sample `docker-compose.yml` together with `docker-compose`.
 
-### With `docker run`:
+#### With docker run:
 
         docker run -d --name=motioneye \
             --device=/dev/video0
@@ -23,7 +23,7 @@ motionEye comes with a `Dockerfile` and a sample `docker-compose.yml`, both in t
             --restart=always \
             motioneye
 
-### with `docker-compose.yml`:
+#### With docker-compose.yml:
 
 Edit `docker-compose.yml` and modify the timezone to your own (A list is available at http://php.net/manual/en/timezones.php).
 
