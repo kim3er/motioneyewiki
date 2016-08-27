@@ -16,6 +16,7 @@
         apt-get install motion ffmpeg v4l-utils
 
     **note 1**: Precompiled binaries for the new 3.4 version of motion can be found [here](https://github.com/Motion-Project/motion/releases/).
+
     **note 2**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]] instead of installing it using `apt-get`.
 
 3. Install the dependencies from the repositories:
