@@ -26,7 +26,7 @@
         wget https://github.com/ccrisan/motioneye/wiki/precompiled/motion-mrdave-raspbian -O /usr/local/bin/motion
         chmod +x /usr/local/bin/motion
 
-    **note 1**: The motion version provided by the official repos is too old and not recommended.
+    **note 1**: Official precompiled binaries for the new 3.4 version of motion can be found [here](https://github.com/Motion-Project/motion/releases/).
 
     **note 2**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]].
 
