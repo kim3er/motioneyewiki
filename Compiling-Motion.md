@@ -1,11 +1,15 @@
 ### Why Compile Motion? ###
 
-The stable version (3.2.12 at the time of writing), which is included with most distros, is highly outdated and lacks features like RTSP camera support. There are various newer versions and forks, some of them more stable and featureful than others. Two notable variants are:
+The stable version (3.2.12 at the time of writing), which is included with most distros, is highly outdated and lacks features like RTSP camera support.
 
-* the [SVN](http://www.lavrsen.dk/svn/motion/) version
-* [Mr Dave's fork](https://github.com/Mr-Dave/motion) (recommended)
+Recently, thanks to [Mr Dave's](https://github.com/Mr-DaveDev/) efforts, the motion project has been revived and now lives at [https://motion-project.github.io/](https://motion-project.github.io/).
 
-The following instructions should normally work with any variant of motion you may find online.
+For some time now, Mr Dave's fork has been the best choice of motion variant and has recently been deemed as version 3.4 of the project. The repositories are as follows:
+
+ * official repo: https://github.com/Motion-Project/motion
+ * Mr Dave's development repo: https://github.com/Mr-DaveDev/motion
+
+The following instructions should normally work with any variant of motion source code you may find online.
 
 ### Requirements ###
 
