@@ -17,5 +17,6 @@
     * [[Running As Normal User|Running-As-Normal-User]]
     * [[Action Buttons|Action-Buttons]]
     * [[Monitoring Commands|Monitoring-Commands]]
+    * [[Using masks|Ignoring-areas-of-the-image-using-masks]]
 * [[Changelog|Changelog]]
 * [[Roadmap|Roadmap]]
