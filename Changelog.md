@@ -1,3 +1,6 @@
+##### 0.33.3:
+ * fixed a bug where upload services credentials would be lost after applying settings
+
 ##### 0.33.2:
  * RTSP network cameras with Digest Authentication can now be added (although no credentials verification will be done)
  * fixed various bugs when changing upload services settings or provider
