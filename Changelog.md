@@ -1,3 +1,7 @@
+##### 0.33.4:
+ * fixed an error that would show up in log when adding a camera with an inexistent target dirrectory
+ * fixed an error where background tasks wouldn't be persisted
+
 ##### 0.33.3:
  * fixed a bug where upload services credentials would be lost after applying settings
  * motion 3.4 is now properly recognized as a new version of the daemon
