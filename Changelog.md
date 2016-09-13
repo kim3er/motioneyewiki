@@ -1,5 +1,6 @@
 ##### 0.33.3:
  * fixed a bug where upload services credentials would be lost after applying settings
+ * motion 3.4 is now properly recognized as a new version of the daemon
 
 ##### 0.33.2:
  * RTSP network cameras with Digest Authentication can now be added (although no credentials verification will be done)
