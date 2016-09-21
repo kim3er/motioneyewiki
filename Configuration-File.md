@@ -70,7 +70,7 @@ Configures the timeout in seconds to wait for a MJPEG frame from the motion daem
 
 ##### `mjpg_client_idle_timeout`
 
-Configures the timeout in seconds after which an idle MJPEG client is closed and removed (set to `0` to keep clients connected indefinitely). Defaults to `10`.
+Configures the timeout in seconds after which an idle internal MJPEG client is closed and removed (set to `0` to keep clients connected indefinitely). Defaults to `10`.
 
 ##### `smb_shares`
 
