@@ -12,7 +12,7 @@ The following actions are defined:
 * `light_off`
 * `alarm_on`
 * `alarm_off`
-* `top`
+* `up`
 * `right`
 * `down`
 * `left`
