@@ -1,11 +1,21 @@
 motionEye comes with a `Dockerfile` and a sample `docker-compose.yml`, both in the `/extra` directory of the project (https://github.com/ccrisan/motioneye/tree/master/extra).
 
+If you like contribute or testing `motioneye` project, you can use the docker container.
+
 ### Instructions
-1. Download the `Dockerfile` and `docker-compose.yml` either by checking out the motioneye repository, or by downloading them directly from Github.
+1. clone your fork or official `motioneye` project
 
-2. Build your motionEye Docker image from the `Dockerfile`. First `cd` into the directory where you put the `Dockerfile`. Then:
+        git clone https://github.com/ccrisan/motioneye.git
 
-        docker build -t motioneye .
+2. Build your motionEye Docker image from the `Dockerfile`. 
+
+        # enter project folder
+        cd motioneye
+        
+        # If you would like build docker image from official project
+        docker build -f extra/Dockerfile -t motioneye .
+
+*Note:* If /etc/motioneye/motioneye.conf not exist, it's copied from /usr/share/motioneye/extra/motioneye.conf.sample (Not overwrite the volume)
 
 3. Have a cup of coffee while the image builds :)
 
@@ -31,3 +41,6 @@ Also edit the two mount points to a directory in your system. Save the file, and
 
         docker-compose -f docker-compose.yml -p motioneye up -d
 
+#### Test your developpement:
+
+If you would contribute or test your development, update the code, and rebuild the docker container, see the step 2
