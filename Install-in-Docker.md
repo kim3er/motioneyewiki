@@ -23,7 +23,7 @@ If you like contribute or testing `motioneye` project, you can use the docker co
 
 #### With docker run:
 
-        docker run -d --name=motioneye \
+        docker run -it --name=motioneye \
             --device=/dev/video0 \
             -p 8081:8081 \
             -p 8765:8765 \
