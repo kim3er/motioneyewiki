@@ -30,6 +30,7 @@ If you like contribute or testing `motioneye` project, you can use the docker co
             -e TIMEZONE="America/New_York" \
             -v /mnt/motioneye/media:/media \
             -v /mnt/motioneye/config:/etc/motioneye \
+            -v $PWD:/usr/local/src/motioneye \
             --restart=always \
             motioneye
 
