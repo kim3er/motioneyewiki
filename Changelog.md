@@ -1,3 +1,6 @@
+#### 0.34:
+ * added smart & editable mask support
+
 ##### 0.33.4:
  * fixed an error that would show up in log when adding a camera with an inexistent target dirrectory
  * fixed an error where background tasks wouldn't be persisted
