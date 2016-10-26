@@ -1,3 +1,7 @@
+#### 0.34.1:
+ * fixed various issues (notably media files uploading) when using square brackets in admin password
+ * fixed wrong camera target for motion detection after disabling/enabling some cameras
+
 #### 0.34:
  * added smart & editable mask support
 
