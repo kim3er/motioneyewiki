@@ -1,3 +1,10 @@
+#### 0.35:
+ * added support for motion 4.0
+ * detected motion version is now displayed in the settings panel
+ * modulo 8 resolutions are now accepted (for newer motion versions)
+ * added support for custom resolutions
+ * added support for despeckle filter
+
 ##### 0.34.1:
  * fixed various issues (notably media files uploading) when using square brackets in admin password
  * fixed wrong camera target for motion detection after disabling/enabling some cameras
