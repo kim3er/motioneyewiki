@@ -10,8 +10,6 @@
 
         pacman -S motion ffmpeg v4l-utils
 
-    **note**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]] instead of installing it using `pacman`.
-
 2. Install the dependencies from the repositories:
 
         pacman -S python2-pip base-devel mime-types curl
