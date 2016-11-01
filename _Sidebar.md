@@ -10,7 +10,6 @@
     * [[Install On Other Distros|Install-On-Other-Distributions]]
     * [[Install In Docker|Install-in-Docker]]
     * [[Manual Installation|Manual-Download-And-Installation]]
-    * [[Compiling Motion|Compiling-Motion]]
 * [[Configuration|Configuration]]
     * [[Configuration File|Configuration-File]]
     * [[Running Behind Nginx|Running-Behind-Nginx]]
