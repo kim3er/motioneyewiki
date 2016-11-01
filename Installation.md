@@ -14,16 +14,6 @@
 
 The `motion` daemon itself is optional, but needed in most cases. Install it (along with `ffmpeg` and `v4l-utils`) unless you configure a machine that will only act as a hub for other motionEye-based cameras.
 
-There are three major variants of motion:
-
-* The stable version (3.2.12 at the time of writing) is included with most distros, but is highly outdated and lacks features like RTSP camera support. The source code can be downloaded from [here](http://www.lavrsen.dk/foswiki/bin/view/Motion/DownloadFiles). It's important to note that this version uses an older configuration file format, incompatible with newer ones (supported by motionEye, nevertheless).
-
-* The 3.4 version (yet to be released, at the time of writing), the recommended one, can be found here: https://github.com/Motion-Project/motion.
-
-* Mr-Dave's development version can be checked out [here](https://github.com/Mr-DaveDev/motion).
-
-Read the [[Compiling Motion|Compiling-Motion]] page if you want to manually compile any of these versions.
-
 ### Install Instructions ###
 
 motionEye releases are uploaded to [PyPI](https://pypi.python.org/pypi/motioneye/), so you can use the `pip` command to install it as well as (some of) its dependencies. Following are detailed instructions for some common distributions.
