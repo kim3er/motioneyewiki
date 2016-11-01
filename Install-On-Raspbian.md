@@ -17,18 +17,16 @@
 
 2. Install the dependencies from the repositories:
 
-        apt-get install python-pip python-dev curl libssl-dev libcurl4-openssl-dev libjpeg-dev libx264-142
+        apt-get install python-pip python-dev curl libssl-dev libcurl4-openssl-dev libjpeg-dev libx264-142 libavcodec56 libavformat56 libmysqlclient18 libswscale3 libpq5
 
     **note**: `v4l-utils` appears to be preinstalled on Raspbian systems; if it isn't, please install it
 
 3. Install `motion`:
 
-        wget https://github.com/ccrisan/motioneye/wiki/precompiled/motion-mrdave-raspbian -O /usr/local/bin/motion
-        chmod +x /usr/local/bin/motion
+        wget https://github.com/Motion-Project/motion/releases/download/release-4.0.1/pi_jessie_motion_4.0.1-1_armhf.deb
+        dpkg -i pi_jessie_motion_4.0.1-1_armhf.deb
 
-    **note 1**: Official precompiled binaries for the new 3.4 version of motion can be found [here](https://github.com/Motion-Project/motion/releases/).
-
-    **note 2**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]].
+    **note**: All official precompiled binaries of motion can be found [here](https://github.com/Motion-Project/motion/releases/).
 
 4. Install `motioneye`, which will automatically pull Python dependencies (`tornado`, `jinja2`, `pillow` and `pycurl`):
 
