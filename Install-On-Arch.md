@@ -10,9 +10,7 @@
 
         pacman -S motion ffmpeg v4l-utils
 
-    **note 1**: Instead of the stable `motion`, you'll probably want to install Mr Dave's version of motion from [AUR](https://aur.archlinux.org/packages/motion-mrdave-git/).
-
-    **note 2**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]] instead of installing it using `pacman`.
+    **note**: For other versions of `motion` check out [[Compiling Motion|Compiling-Motion]] instead of installing it using `pacman`.
 
 2. Install the dependencies from the repositories:
 
