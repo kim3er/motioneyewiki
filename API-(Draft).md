@@ -244,7 +244,7 @@ Returns the media files configuration of the camera with the specified id.
             "upload_stills": boolean,
             "upload_movies": boolean,
             "webhook_url": string,
-            "webhook_method": ["get", "post", "post_form", "post_json"], 
+            "webhook_method": string,
             "command_enabled": boolean,
             "command_exec": "string"
         }
@@ -313,8 +313,8 @@ Returns the text overlay configuration of the camera with the specified id.
     * `left` - the text to overlay on the bottom-left side of the image
     * `right` - the text to overlay on the bottom-left side of the image
     
-    Special tokens can be used in both fields, as follows:
-    
+        Special tokens can be used in both fields, as follows:
+
         * `%Y` - year
         * `%m` - month
         * `%d` - day
