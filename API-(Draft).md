@@ -1,6 +1,46 @@
 
 # motionEye API (Draft)
 
+## Contents
+
+ * [Protocol And Data Format](#protocol-and-data-format)
+ * [Authentication](#authentication)
+ * [API Calls](#api-calls)
+    * [motionEye Server Management](#motioneye-server-management)
+        * [`GET /api/main`](#get-apimain)
+        * [`POST /api/main`](#post-apimain)
+    * [Camera Management](#camera-management)
+        * [`GET /api/cameras`](#get-apicameras)
+        * [`POST /api/cameras`](#post-apicameras)
+        * [`POST /api/camera/<id>/remove`](#post-apicameraidremove)
+    * [Camera Device Parameters](#camera-device-parameters)
+        * [`GET /api/camera/<id>/device`](#get-apicameraiddevice)
+        * [`POST /api/camera/<id>/device`](#post-apicameraiddevice)
+    * [Media Files](#media-files)
+        * [`GET /api/camera/<id>/media`](#get-apicameraidmedia)
+        * [`POST /api/camera/<id>/media`](#post-apicameraidmedia)
+    * [Text Overlay](#text-overlay)
+        * [`GET /api/camera/<id>/overlay`](#get-apicameraidoverlay)
+        * [`POST /api/camera/<id>/overlay`](#post-apicameraidoverlay)
+    * [Streaming](#streaming)
+        * [`GET /api/camera/<id>/streaming`](#get-apicameraidstreaming)
+        * [`POST /api/camera/<id>/streaming`](#post-apicameraidstreaming)
+    * [Still Images](#still-images)
+        * [`GET /api/camera/<id>/stills`](#get-apicameraidstills)
+        * [`POST /api/camera/<id>/stills`](#post-apicameraidstills)
+    * [Movies](#movies)
+        * [`GET /api/camera/<id>/movies`](#get-apicameraidmovies)
+        * [`POST /api/camera/<id>/movies`](#post-apicameraidmovies)
+    * [Motion Detection](#motion-detection)
+        * [`GET /api/camera/<id>/motion_detection`](#get-apicameraidmotion-detection)
+        * [`POST /api/camera/<id>/motion_detection`](#post-apicameraidmotion-detection)
+    * [Notifications](#notifications)
+        * [`GET /api/camera/<id>/notifications`](#get-apicameraidnotifications)
+        * [`POST /api/camera/<id>/notifications`](#post-apicameraidnotifications)
+    * [Working Schedule](#working-schedule)
+        * [`GET /api/camera/<id>/working_schedule`](#get-apicameraidworking-schedule)
+        * [`POST /api/camera/<id>/working_schedule`](#post-apicameraidworking-schedule)
+
 
 ## Protocol And Data Format
 
