@@ -10,6 +10,8 @@
 
 ## API Calls
 
+`null` values should be avoided. In requests they are however accepted but will be internally converted to `false`, `0`, or empty string (`""`), depending on the expected data type.
+
 
 ### motionEye Server Management
 
@@ -187,10 +189,16 @@ Changes the device parameters of the camera with the specified id.
     All fields are optional and only the specified fields will be updated.
     For the meaning of each field, see [`GET /api/camera/<id>/device`](#get-apicameraiddevice).
 
+ * successful response:
+ 
+        {}
+
 
 ### Media Files
     
 #### `GET /api/camera/<id>/media`
+
+Returns the media files configuration of the camera with the specified id.
 
  * successful response:
 
@@ -208,6 +216,34 @@ Changes the device parameters of the camera with the specified id.
             "command_exec": "string"
         }
 
+ * fields:
+
+    * `disk.used` - the disk usage, in bytes
+    * `disk.total` - the total disk capacity, in bytes
+    * `upload_stills` - whether the still images are uploaded to the configured upload service or not
+    * `upload_movies` - whether the movies are uploaded to the configured upload service or not
+    * `webhook_url` - the complete URL to request whenever a media file is created, including any URL-encoded query arguments (up to 512 characters); special tokens:
+    
+        * `%Y` - year
+        * `%m` - month
+        * `%d` - day
+        * `%H` - hour
+        * `%M` - minute
+        * `%S` - second
+        * `%f` - media file path
+    
+    * `webhook_method` - the HTTP method to use; possible values:
+
+        * `"get"` - a simple HTTP GET
+        * `"post"` - a simple HTTP POST without body
+        * `"post_form"` - an HTTP POST with form data (URL-encoded) body
+        * `"post_json"` - an HTTP POST with JSON body
+        
+        The fields transmitted in body (where applicable) are in fact the query arguments configured for `webhook_url`.
+    
+    * `command_enabled` - whether the configured command will be executed or not upon the creation of a media file
+    * `command_exec` - a command to execute upon the creation of a media file (up to 512 characters); special tokens from `webhook_url` apply here as well
+
 #### `POST /api/camera/<id>/media`
 
  * expects:
@@ -216,15 +252,24 @@ Changes the device parameters of the camera with the specified id.
             "upload_stills": boolean,
             "upload_movies": boolean,
             "webhook_url": string,
-            "webhook_method": ["get", "post", "post_form", "post_json"], 
+            "webhook_method": string,
             "command_enabled": boolean,
             "command_exec": "string"
         }
+
+    All fields are optional and only the specified fields will be updated.
+    For the meaning of each field, see [`GET /api/camera/<id>/media`](#get-apicameraidmedia).
+
+ * successful response:
+ 
+        {}
 
 
 ### Text Overlay
 
 #### `GET /api/camera/<id>/overlay`
+
+Returns the text overlay configuration of the camera with the specified id.
 
  * successful response:
 
@@ -232,6 +277,23 @@ Changes the device parameters of the camera with the specified id.
             "left": string,
             "right": string
         }
+
+ * fields:
+ 
+    * `left` - the text to overlay on the bottom-left side of the image
+    * `right` - the text to overlay on the bottom-left side of the image
+    
+    Special tokens can be used in both fields, as follows:
+    
+        * `%Y` - year
+        * `%m` - month
+        * `%d` - day
+        * `%H` - hour
+        * `%M` - minute
+        * `%S` - second
+        * `%T` - HH:MM:SS
+        * `%q` - frame number inside a second
+        * `\n` - new line
 
 #### `POST /api/camera/<id>/overlay`
 
@@ -241,6 +303,13 @@ Changes the device parameters of the camera with the specified id.
             "left": string,
             "right": string
         }
+
+    All fields are optional and only the specified fields will be updated.
+    For the meaning of each field, see [`GET /api/camera/<id>/overlay`](#get-apicameraidoverlay).
+
+ * successful response:
+ 
+        {}
 
 
 ### Streaming
@@ -274,6 +343,13 @@ Changes the device parameters of the camera with the specified id.
             "motion_optimization": boolean
         }
 
+    All fields are optional and only the specified fields will be updated.
+    For the meaning of each field, see [`GET /api/camera/<id>/streaming`](#get-apicameraidstreaming).
+
+ * successful response:
+ 
+        {}
+
 
 ### Still Images
 
@@ -301,7 +377,14 @@ Changes the device parameters of the camera with the specified id.
             "preserve": number, /* 0 - 3650 */
         }
 
-        
+    All fields are optional and only the specified fields will be updated.
+    For the meaning of each field, see [`GET /api/camera/<id>/stills`](#get-apicameraidstills).
+
+ * successful response:
+ 
+        {}
+
+
 ### Movies
 
 #### `GET /api/camera/<id>/movies`
@@ -329,6 +412,13 @@ Changes the device parameters of the camera with the specified id.
             "max_length": number, /* 0 - 86400 */
             "preserve": number, /* 0 - 3650 */
         }
+
+    All fields are optional and only the specified fields will be updated.
+    For the meaning of each field, see [`GET /api/camera/<id>/movies`](#get-apicameraidmovies).
+
+ * successful response:
+ 
+        {}
 
 
 ### Motion Detection
@@ -373,6 +463,13 @@ Changes the device parameters of the camera with the specified id.
             "mask_lines": number[][], /* 0/1 */
         }
 
+    All fields are optional and only the specified fields will be updated.
+    For the meaning of each field, see [`GET /api/camera/<id>/motion_detection`](#get-apicameraidmotion-detection).
+
+ * successful response:
+ 
+        {}
+
 
 ### Notifications
 
@@ -416,6 +513,13 @@ Changes the device parameters of the camera with the specified id.
             "command_exec": string
         }
 
+    All fields are optional and only the specified fields will be updated.
+    For the meaning of each field, see [`GET /api/camera/<id>/notifications`](#get-apicameraidnotifications).
+
+ * successful response:
+ 
+        {}
+
 
 ### Working Schedule
         
@@ -450,3 +554,10 @@ Changes the device parameters of the camera with the specified id.
             ],
             ...
         }
+
+    All fields are optional and only the specified fields will be updated.
+    For the meaning of each field, see [`GET /api/camera/<id>/working_schedule`](#get-apicameraidworking_schedule).
+
+ * successful response:
+ 
+        {}
