@@ -65,19 +65,39 @@ Adds a camera to the server.
  * expects:
 
         {
-            "type": ["v4l2", "netcam", "remote", "simple"],
+            "type": string,
             "device": string,
             "url": string,
             "username": string,
             "password": string,
             "camera_id": number
         }
+    
+    Depending on the `type`, some of the fields may be required and others may be ignored.
+
+ * fields:
+
+    * `type` - the camera type; possible values:
+
+        * `"v4l2"` - V4L2 camera
+        * `"netcam"` - network (IP) camera
+        * `"remote"` - remote motionEye camera
+        * `"simple"` - simple MJPEG camera
+    
+    * `device` - the device path, used only by `"v4l2"` camera type (e.g. `"/dev/video0"`)
+    * `url` - the netcam or remote motionEye camera URL
+    * `username` - the username of the netcam or remote motionEye camera
+    * `password` - the password of the netcam or remote motionEye camera
+    * `camera_id` - the id of the remote motionEye camera
 
  * successful response:
 
         {
             "id": number
         }
+    
+    * `id` is the id of the new camera
+
 
 #### `POST /api/camera/<id>/remove`
 
@@ -103,19 +123,43 @@ Returns the device parameters of the camera with the specified id.
         {
             "enabled": boolean,
             "name": string,
-            "type": ["v4l2", "netcam", "remote", "simple"],
-            "rotation": number, /* 0, 90, 180, 270 */
+            "type": string,
+            "rotation": number,
             "resolution": {
-                "width": number, /* 96 - 4096 */
-                "height": number  /* 96 - 4096 */
+                "width": number,
+                "height": number
             },
-            "framerate": number, /* 0 - 30 */
-            "brightness": number, /* 0 - 100 */
-            "constrast": number, /* 0 - 100 */
-            "saturation": number, /* 0 - 100 */
-            "hue": number, /* 0 - 100 */
+            "framerate": number,
+            "brightness": number,
+            "constrast": number,
+            "saturation": number,
+            "hue": number,
             "auto_brightness": boolean
         }
+    
+ * fields:
+ 
+    * `enabled` - whether the camera is enabled or not
+    * `name` - the camera name (between 1 and 64 characters)
+    * `type` - the camera type; possible values:
+
+        * `"v4l2"` - V4L2 camera
+        * `"netcam"` - network (IP) camera
+        * `"remote"` - remote motionEye camera
+        * `"simple"` - simple MJPEG camera
+
+    * `rotation` - camera rotation (in degrees); possible values are `0`, `90`, `180` and `270`
+    * `resolution`:
+
+        * `width` - the camera resolution width (between 96 and 4096, multiple of 8)
+        * `height` - the camera resolution height (between 96 and 4096, multiple of 8)
+    
+    * `framerate` - the capturing framerate (between 1 and 30)
+    * `brightness` - the camera brightness control (between 0 and 100)
+    * `contrast` - the camera contrast control (between 0 and 100)
+    * `saturation` - the camera saturation control (between 0 and 100)
+    * `hue` - the camera hue control (between 0 and 100)
+    * `auto_brightness` - whether the brightness is adjusted automatically or not
 
 #### `POST /api/camera/<id>/device`
 
@@ -126,21 +170,22 @@ Changes the device parameters of the camera with the specified id.
         {
             "enabled": boolean,
             "name": string,
-            "type": ["v4l2", "netcam", "remote", "simple"],
-            "rotation": number, /* 0, 90, 180, 270 */
+            "type": string,
+            "rotation": number,
             "resolution": {
-                "width": number, /* 96 - 4096 */
-                "height": number  /* 96 - 4096 */
+                "width": number,
+                "height": number
             },
-            "framerate": number, /* 0 - 30 */
-            "brightness": number, /* 0 - 100 */
-            "constrast": number, /* 0 - 100 */
-            "saturation": number, /* 0 - 100 */
-            "hue": number, /* 0 - 100 */
+            "framerate": number,
+            "brightness": number,
+            "constrast": number,
+            "saturation": number,
+            "hue": number,
             "auto_brightness": boolean
         }
 
     All fields are optional and only the specified fields will be updated.
+    For the meaning of each field, see [`GET /api/camera/<id>/device`](#get-apicameraiddevice).
 
 
 ### Media Files
