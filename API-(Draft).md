@@ -32,14 +32,14 @@
         * [`GET /api/camera/<id>/movies`](#get-apicameraidmovies)
         * [`POST /api/camera/<id>/movies`](#post-apicameraidmovies)
     * [Motion Detection](#motion-detection)
-        * [`GET /api/camera/<id>/motion_detection`](#get-apicameraidmotion-detection)
-        * [`POST /api/camera/<id>/motion_detection`](#post-apicameraidmotion-detection)
+        * [`GET /api/camera/<id>/motion_detection`](#get-apicameraidmotion_detection)
+        * [`POST /api/camera/<id>/motion_detection`](#post-apicameraidmotion_detection)
     * [Notifications](#notifications)
         * [`GET /api/camera/<id>/notifications`](#get-apicameraidnotifications)
         * [`POST /api/camera/<id>/notifications`](#post-apicameraidnotifications)
     * [Working Schedule](#working-schedule)
-        * [`GET /api/camera/<id>/working_schedule`](#get-apicameraidworking-schedule)
-        * [`POST /api/camera/<id>/working_schedule`](#post-apicameraidworking-schedule)
+        * [`GET /api/camera/<id>/working_schedule`](#get-apicameraidworking_schedule)
+        * [`POST /api/camera/<id>/working_schedule`](#post-apicameraidworking_schedule)
 
 
 ## Protocol And Data Format
@@ -120,12 +120,10 @@ Adds a camera to the server.
  * fields:
 
     * `type` - the camera type; possible values:
-
         * `"v4l2"` - V4L2 camera
         * `"netcam"` - network (IP) camera
         * `"remote"` - remote motionEye camera
         * `"simple"` - simple MJPEG camera
-    
     * `device` - the device path, used only by `"v4l2"` camera type (e.g. `"/dev/video0"`)
     * `url` - the netcam or remote motionEye camera URL
     * `username` - the username of the netcam or remote motionEye camera
@@ -184,18 +182,14 @@ Returns the device parameters of the camera with the specified id.
     * `enabled` - whether the camera is enabled or not
     * `name` - the camera name (between 1 and 64 characters)
     * `type` - the camera type; possible values:
-
         * `"v4l2"` - V4L2 camera
         * `"netcam"` - network (IP) camera
         * `"remote"` - remote motionEye camera
         * `"simple"` - simple MJPEG camera
-
     * `rotation` - camera rotation (in degrees); possible values are `0`, `90`, `180` and `270`
     * `resolution`:
-
         * `width` - the camera resolution width (between 96 and 4096, multiple of 8)
         * `height` - the camera resolution height (between 96 and 4096, multiple of 8)
-    
     * `framerate` - the capturing framerate (between 1 and 30)
     * `brightness` - the camera brightness control (between 0 and 100)
     * `contrast` - the camera contrast control (between 0 and 100)
@@ -247,7 +241,6 @@ Returns the media files configuration of the camera with the specified id.
                 "used": number,
                 "total": number
             },
-
             "upload_stills": boolean,
             "upload_movies": boolean,
             "webhook_url": string,
@@ -263,7 +256,6 @@ Returns the media files configuration of the camera with the specified id.
     * `upload_stills` - whether the still images are uploaded to the configured upload service or not
     * `upload_movies` - whether the movies are uploaded to the configured upload service or not
     * `webhook_url` - the complete URL to request whenever a media file is created, including any URL-encoded query arguments (up to 512 characters); special tokens:
-    
         * `%Y` - year
         * `%m` - month
         * `%d` - day
@@ -271,9 +263,7 @@ Returns the media files configuration of the camera with the specified id.
         * `%M` - minute
         * `%S` - second
         * `%f` - media file path
-    
     * `webhook_method` - the HTTP method to use; possible values:
-
         * `"get"` - a simple HTTP GET
         * `"post"` - a simple HTTP POST without body
         * `"post_form"` - an HTTP POST with form data (URL-encoded) body
