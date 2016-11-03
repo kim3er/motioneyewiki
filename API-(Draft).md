@@ -53,7 +53,7 @@ All string values must be encoded as UTF-8 strings.
 
 ### JSON, Plain Text And URL-Encoded
 
-The following list presents the JSON variant of the available API calls. For each field in each of API calls, there's a simple text/plain or URL-encoded variant.
+The JSON variants of the available API calls are described in detail in this document. However, for each field in each of the API calls, there's a simple plain text or URL-encoded variant.
 
 For example, instead of issuing a [`GET /api/camera/<id>/device`](#get-apicameraiddevice) request to find out the name of a camera, one could issue the following request:
 
