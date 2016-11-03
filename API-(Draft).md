@@ -4,6 +4,9 @@
 ## Contents
 
  * [Protocol And Data Format](#protocol-and-data-format)
+     * [JSON, Plain Text And URL-Encoded](#json-plain-text-and-url-encoded)
+     * [Content Types](#content-types)
+     * [HTTP Stats Codes](#http-status-codes)
  * [Authentication](#authentication)
  * [API Calls](#api-calls)
     * [motionEye Server Management](#motioneye-server-management)
@@ -40,18 +43,103 @@
     * [Working Schedule](#working-schedule)
         * [`GET /api/camera/<id>/working_schedule`](#get-apicameraidworking_schedule)
         * [`POST /api/camera/<id>/working_schedule`](#post-apicameraidworking_schedule)
-
+ * [Examples](#examples)
 
 ## Protocol And Data Format
 
+`null` values should be avoided in general. In JSON requests they are however accepted but will be internally converted to `false`, `0`, or empty string (`""`), depending on the expected data type.
+
+All string values must be encoded as UTF-8 strings.
+
+### JSON, Plain Text And URL-Encoded
+
+The following list presents the JSON variant of the available API calls. For each field in each of API calls, there's a simple text/plain or URL-encoded variant.
+
+For example, instead of issuing a [`GET /api/camera/<id>/device`](#get-apicameraiddevice) request to find out the name of a camera, one could issue the following request:
+
+    GET /api/camera/<id>/device/name
+
+and the response will be a simple text representing the name of the camera (e.g. `Backyard Camera`).
+
+Changing the parameter can be achieved in a similar manner, using a POST request:
+
+    POST /api/camera/<id>/device/name
+
+and in the request body, the simple text representing the name of the camera is expected.
+
+Specifying new values for one or more parameters can be done also using the URL-encoded format:
+
+    POST /api/camera/<id>/device
+
+and in the request body, name-value pairs for each desired parameter are expected. The following will update the name and the framerate of the camera:
+
+    name=Frontyard%20Camera&framerate=10
+
+In case of complex fields (such as camera device `resolution`, which has a `width` and a `height` subfields), they must be specified using the dot notation (e.g. `resolution.width`), unless the JSON format is used.
+
+### Content Types
+
+It is important to specify the correct content type when issuing POST requests. The following content types are accepted by motionEye:
+
+ * `application/json`
+ * `application/x-www-form-urlencoded`
+ * `text/plain`
+ 
+The response from the server will always have the correct content type (either `application/json` or `text/plain`, depending on the request path).
+
+### HTTP Status Codes
+
+Successful requests are always responded with a `200 OK` status.
+
+Unauthenticated requests are responded with a `401 Unauthorized` status. Additionally, the `WWW-Authenticate` header will be set to the appropriated Digest value, with the realm set to the name of the server.
+
+Requests to any unknown path will be responded with a `404 Not Found`. The same status will be used for requests to an unknown camera id.
+
+If an invalid value was supplied for a parameter, or the parameter was expected but not supplied at, the response will have a `400 Bad Request` status and the body will have a JSON-encoded object with one field called `param`, indicating the name of the invalid parameter:
+
+    {
+        "param": "brightness"
+    }
+
+Other API call-specific errors and corresponding statuses are described next to the respective API call.
 
 ## Authentication
 
+Three types of authentication are supported by the motionEye API server. Each one is described in detail in the following sections.
+
+All requests require the admin username and the password configured for the administrator account. In case the administrator password is empty, requests can be issued without authentication data.
+
+The server will always respond with an HTTP Digest Authentication requirement response to unauthorized requests. It's then up to the client to continue with the HTTP Digest mechanism, to include HTTP Basic Authentication data or to include the authentication signature.
+
+### HTTP Basic Authentication
+
+This authentication type can be used in less secure environments, where reply attacks are out of question (e.g. issuing requests directly from the running machine).
+
+### HTTP Digest Authentication
+
+This authentication type can be used when security is a concern, if the client (or the client library) used supports this authentication scheme.
+
+### Signature
+
+The signature is a query argument that must be included with every request (e.g. `?signature=<signature>`), when this authentication method is used. The signature is computed as follows:
+
+    signature = sha1(signing_string)
+
+where the signing string is obtained as follows:
+
+    signing_string = <method>:<path>:<body>:<password>'
+
+The four parameters from the formula are:
+
+ * `method` is the HTTP method in uppercase (e.g. `POST`)
+ * `path` is the requested path, including any query arguments, sorted alphabetically (e.g. `/api/camera/3/media`)
+ * `body` is the entire unmodified body of the request, or an empty string in the absence of a body
+ * `password` is the administrator's password
+
+The signature must be expressed as a 40 characters lowercase hex string.
+
 
 ## API Calls
-
-`null` values should be avoided. In requests they are however accepted but will be internally converted to `false`, `0`, or empty string (`""`), depending on the expected data type.
-
 
 ### motionEye Server Management
 
@@ -137,8 +225,7 @@ Adds a camera to the server.
         }
     
     * `id` is the id of the new camera
-
-
+ 
 #### `POST /api/camera/<id>/remove`
 
 Removes the camera with the given id from the server.
@@ -591,3 +678,6 @@ Returns the text overlay configuration of the camera with the specified id.
  * successful response:
  
         {}
+
+
+## Examples
