@@ -1,5 +1,7 @@
 
-# motionEye API (Draft)
+# motionEye API (Draft, Not Implemented!)
+
+**THIS API HASN'T YET BEEN IMPLEMENTED!!!**
 
 ## Contents
 
