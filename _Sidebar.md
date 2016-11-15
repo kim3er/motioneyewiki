@@ -16,4 +16,5 @@
     * [[Running As Normal User|Running-As-Normal-User]]
     * [[Action Buttons|Action-Buttons]]
     * [[Monitoring Commands|Monitoring-Commands]]
+* [[Troubleshooting|Troubleshooting]]
 * [[Changelog|Changelog]]
