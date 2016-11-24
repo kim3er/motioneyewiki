@@ -56,6 +56,10 @@ Configures the interval in seconds at which motionEye checks the mounted filesys
 
 Configures the interval in seconds at which motionEye checks if motion is running. Defaults to `10`.
 
+##### `motion_restart_on_errors`
+
+Configures whether the motion daemon should be restarted when an error occurs while communicating with it. Defaults to `false`.
+
 ##### `cleanup_interval`
 
 Configures the interval in seconds at which the janitor function is called to remove old media files. Defaults to `43200` (twice a day).
