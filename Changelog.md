@@ -1,3 +1,11 @@
+##### 0.35.1:
+ * added [motion_restart_on_errors](https://github.com/ccrisan/motioneye/wiki/Configuration-File#motion_restart_on_errors) setting to control whether motion should be restarted upon communication errors or not
+ * fixed capture FPS when a camera timeouts or freezes
+ * `relayevent.sh` now uses a request timeout of 5 seconds when transmitting events from motion to motionEye
+ * added *Camera ID* field in the settings panel
+ * various streaming URLs are now shown in a popup
+ * fixed `manifest.json` location when using `base_path` setting
+
 #### 0.35:
  * added support for motion 4.0
  * detected motion version is now displayed in the settings panel
