@@ -24,10 +24,6 @@ Defines the folder where log files are created. This folder must be writable by 
 
 Defines the folder where the media files are created, by default. This folder must be writable by the user with which motionEye runs. Defaults to `/var/lib/motioneye`.
 
-##### `motion_binary`
-
-Instructs motionEye to use a specific *motion* daemon. The path will be automatically detected by default, using the `PATH` environment variable.
-
 ##### `log_level`
 
 Changes the log level of motionEye as well as of the motion daemon started by motionEye. Accepted values are `quiet`, `error`, `warning`, `info` and `debug`. Defaults to `info`.
@@ -40,6 +36,10 @@ Defines the IP address on which the motionEye server will listen. Use `0.0.0.0` 
 
 Defines the TCP port on which the motionEye server will listen. Defaults to `8765`.
 
+##### `motion_binary`
+
+Instructs motionEye to use a specific *motion* daemon. The path will be automatically detected by default, using the `PATH` environment variable.
+
 ##### `motion_control_localhost`
 
 Set this to `false` to restrict the motion daemon's HTTP control server to listen on all interfaces. Defaults to `true`.
@@ -48,10 +48,6 @@ Set this to `false` to restrict the motion daemon's HTTP control server to liste
 
 Defines the TCP port for the motion daemon's HTTP control server. Defaults to `7999`.
 
-##### `mount_check_interval`
-
-Configures the interval in seconds at which motionEye checks the mounted filesystems (notably SMB/network share mounts). Defaults to `300`.
-
 ##### `motion_check_interval`
 
 Configures the interval in seconds at which motionEye checks if motion is running. Defaults to `10`.
@@ -59,6 +55,10 @@ Configures the interval in seconds at which motionEye checks if motion is runnin
 ##### `motion_restart_on_errors`
 
 Configures whether the motion daemon should be restarted when an error occurs while communicating with it. Defaults to `false`.
+
+##### `mount_check_interval`
+
+Configures the interval in seconds at which motionEye checks the mounted filesystems (notably SMB/network share mounts). Defaults to `300`.
 
 ##### `cleanup_interval`
 
