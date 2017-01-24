@@ -14,6 +14,8 @@
 
         pip install motioneye
 
+    **note**: If your distro defaults to Python3, use `pip2`.
+
 4. Prepare the configuration directory:
 
         mkdir -p /etc/motioneye
