@@ -1,3 +1,11 @@
+##### 0.35.2:
+ * space can now be used in passwords
+ * appending `?camera_ids=1,2,...` as query arguments will effectively display only those cameras
+ * credentials can now be stored and remembered
+ * the number of rows when laying out frames is now configurable as a preference
+ * various editable mask fixes
+ * maximum uploadable media file size increased to 1GB
+
 ##### 0.35.1:
  * added [motion_restart_on_errors](https://github.com/ccrisan/motioneye/wiki/Configuration-File#motion_restart_on_errors) setting to control whether motion should be restarted upon communication errors or not
  * fixed capture FPS when a camera timeouts or freezes
