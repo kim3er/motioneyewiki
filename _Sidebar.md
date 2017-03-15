@@ -17,4 +17,5 @@
     * [[Action Buttons|Action-Buttons]]
     * [[Monitoring Commands|Monitoring-Commands]]
 * [[Troubleshooting|Troubleshooting]]
+* [[Report Motion Issue|Report-Motion-Issue]]
 * [[Changelog|Changelog]]
