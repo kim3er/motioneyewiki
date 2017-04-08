@@ -36,5 +36,5 @@
 
 8. To upgrade to the newest version of motionEye, just issue:
 
-        pip install motioneye --upgrade
+        pip2 install motioneye --upgrade
         systemctl restart motioneye
