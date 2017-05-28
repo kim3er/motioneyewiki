@@ -4,10 +4,6 @@ motionEye uses a configuration file (usually called `motioneye.conf`) that allow
 
 ### Available Options
 
-##### `base_path`
-
-Allows altering the base URL path at which motionEye lives. Change this if you run motionEye behind a reverse proxy and you want to make motionEye accessible at a specific base path (e.g. /cams). Defaults to `/`.
-
 ##### `conf_path`
 
 Defines the folder for the various configuration files used by motionEye. These include `motion.conf`, `thread-*.conf` (both used by the *motion* daemon). This folder must be writable by the user with which motionEye runs. Defaults to `/etc/motioneye`.
