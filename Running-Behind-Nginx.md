@@ -19,16 +19,8 @@ Here's the content of a sample virtual host file that normally goes to `/etc/ngi
         }
     }
 
-Your motionEye UI will be available at `http://motioneye.example.com/cams`.
+Your motionEye UI will be available at `http://motioneye.example.com/cams/`.
 It's important to note the trailing slashes at `location /cams/` and at `http://192.168.1.7:8765/`. They make sure paths are correctly passed around when forwarding the HTTP requests to motionEye.
-
-### motionEye Base Path
-
-Your `motioneye.conf` file should also reflect the `/cams` base path at which it is accessed (static files, such as JavaScript, images and CSS files need to be requested at that path as well). Uncomment and set the `base_path` option in your `motioneye.conf`:
-
-    ...
-    base_path /cams
-    ...
 
 ### MJPEG And Nginx
 
