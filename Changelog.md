@@ -1,3 +1,13 @@
+#### 0.36:
+ * added support for uploading media files to FTP server
+ * removed `base_path` setting - static files are now referenced using relative paths (thanks @lebomb44 for the suggestion)
+ * removed OGG video format as it's no longer accepted by motion
+ * auth HTTP cookie names are now prefixed with `meye_`
+ * admin password is now validated (trouble-causing special characters are no longer accepted)
+ * snapshot URL will do its best to always serve a JPEG frame
+ * motion gap setting now accepts value `0`
+ * other minor fixes
+
 ##### 0.35.2:
  * space can now be used in passwords
  * appending `?camera_ids=1,2,...` as query arguments will effectively display only those cameras
