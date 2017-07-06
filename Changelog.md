@@ -1,3 +1,8 @@
+##### 0.36.1:
+ * fixed frame view relative paths
+ * prevent framerate dimmer preference to reach 0%
+ * Dockerfile: included `extra` folder
+
 #### 0.36:
  * added support for uploading media files to FTP server
  * removed `base_path` setting - static files are now referenced using relative paths (thanks @lebomb44 for the suggestion)
