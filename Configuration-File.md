@@ -120,6 +120,10 @@ Set this to `false` to disable adding and removing of cameras from the UI. Defau
 
 Controls whether HTTPS/SSL certificates are validated by various clients used by motionEye, or not. Defaults to `true`.
 
+##### `password_hook`
+
+Sets the full path to an external program to be executed whenever a password changes. The program will be invoked with environment variables `MEYE_USERNAME` and `MEYE_PASSWORD` set accordingly. This is unset by default.
+
 ##### `http_basic_auth`
 
 Enables HTTP basic authentication scheme (in addition to, not instead of the signature mechanism). Defaults to `false`.
