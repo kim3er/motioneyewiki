@@ -119,3 +119,7 @@ Set this to `false` to disable adding and removing of cameras from the UI. Defau
 ##### `validate_certs`
 
 Controls whether HTTPS/SSL certificates are validated by various clients used by motionEye, or not. Defaults to `true`.
+
+##### `http_basic_auth`
+
+Enables HTTP basic authentication scheme (in addition to, not instead of the signature mechanism). Defaults to `false`.
