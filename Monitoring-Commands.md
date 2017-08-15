@@ -8,7 +8,7 @@ Monitoring commands can be used to watch system parameters such as the system lo
 
 motionEye will look inside its [[configuration folder|Configuration-File#conf_path]] for executable files named `monitor_[cameraid]`, where `cameraid` is the id of the camera on top of which the monitoring info will be displayed.
 
-For example, on a setup using the default configuration, the presence of the *executable* file `/etc/motioneye/monitor_1` will determine motionEye to run the script every 1 second (by default), to read its *standard output* and to display it on top of the first camera frame.
+For example, on a setup using the default configuration, the presence of the *executable* file `/data/etc/monitor_1` will determine motionEye to run the script every 1 second (by default), to read its *standard output* and to display it on top of the first camera frame.
 
 ### Execution (Refresh) Rate
 
