@@ -21,14 +21,17 @@ By default, all monitoring scripts are called every 1 second. If a script wishes
 * Monitoring command files can be symlinks, as long as they point to an executable file.
 * No arguments are passed when executing the file; if you need to pass arguments to your commands, create a shell script as a wrapper around your command.
 * The command must return immediately (i.e. should not block).
+* NOTE: To see the overlayed text you must click on the image which will show the frame around the and the text will be shoes on the bottom left corner. Look at the image in this [Issue](https://github.com/ccrisan/motioneye/issues/240#issuecomment-230158787).
 
 ### Example
 
 The following monitoring script can be used to display the temperature of a system every 10 seconds:
 
     #!/bin/bash
-    
-    temp=$(cat /sys/devices/virtual/thermal/thermal_zone0/temp)
-    temp=$(($temp / 1000))
-    echo "${temp}&deg;"
+
+    cpuTemp0=$(cat /sys/class/thermal/thermal_zone0/temp)
+    cpuTemp1=$(($cpuTemp0/1000))
+    cpuTemp2=$(($cpuTemp0/100))
+    cpuTempM=$(($cpuTemp2 % $cpuTemp1))
+    echo CPU Temp"="$cpuTemp1"."$cpuTempM""
     echo 10 1>&2
