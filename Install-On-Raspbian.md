@@ -1,6 +1,6 @@
 ### Before Proceeding
 * Read the general [[Installation|Installation]] page first.
-* These instructions apply only to an up-to-date Raspbian, the official Raspberry PI distro.
+* These instructions apply only to an up-to-date Raspbian Jessie. If you're running Stretch, read the [[Stretch|Install-On-Raspbian-Stretch]] guide.
 * All commands require *root*; use `sudo` before each command or become root using `sudo -i`.
 * If you want to use the CSI camera module for the Raspberry PI, you need to add `bcm2835-v4l2` to `/etc/modules` and reboot.
 

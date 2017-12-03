@@ -28,7 +28,8 @@ Choose one of the following specific install instructions. When you're done, you
 
 * [[Install On Debian|Install-On-Debian]]
 * [[Install On Ubuntu|Install-On-Ubuntu]]
-* [[Install On Raspbian|Install-On-Raspbian]]
+* [[Install On Raspbian (Jessie)|Install-On-Raspbian]]
+* [[Install On Raspbian (Stretch)|Install-On-Raspbian-Stretch]]
 * [[Install On Fedora|Install-On-Fedora]]
 * [[Install On Arch|Install-On-Arch]]
 * [[Install On Other Distributions|Install-On-Other-Distributions]]
